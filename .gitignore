@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+*.pyo
+*.pyd
+.Python
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Project specific
+data/
+config/
+*.bin
+*.key
+
+# OS
+.DS_Store
+Thumbs.db

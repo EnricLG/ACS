@@ -18,4 +18,4 @@ config/
 
 # OS
 .DS_Store
-Thumbs.db
+Thumbs.dboutput_*.txt

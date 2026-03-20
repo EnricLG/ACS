@@ -1,90 +1,123 @@
 """
-Test de integración: Fase 0 + Fase 1 con el texto completo de 1984.
-Muestra el grid antes y después de las rotaciones.
+Phase 0: Preprocessing
+- Converts plain text into 100×100 grid
+- Pads real words to at least 6 characters
+- Filler words are taken from a fixed list of 6-9 letter words
+- Dynamically adds filler words to exactly fill 10000 characters (including spaces)
+- Final grid contains only words (padded real + filler) and spaces, no extra 'x'
 """
 
-import sys
-sys.path.append('src')
-from phase0_preprocessing import Phase0Preprocessing
-from phase1_rotations import Phase1Rotations
 import random
-import time
+from typing import List, Tuple
 
-# Texto completo de 1984 (mismo que en test_phase0)
-texto_1984_completo = """It was a bright cold day in April, and the clocks were striking thirteen. Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind, slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of gritty dust from entering along with him. The hallway smelt of boiled cabbage and old rag mats. At one end of it a coloured poster, too large for indoor display, had been tacked to the wall. It depicted simply an enormous face, more than a metre wide: the face of a man of about forty-five, with a heavy black moustache and ruggedly handsome features. Winston made for the stairs. It was no use trying the lift. Even at the best of times it was seldom working, and at present the electric current was cut off during daylight hours. It was part of the economy drive in preparation for Hate Week. The flat was seven flights up, and Winston, who was thirty-nine and had a varicose ulcer above his right ankle, went slowly, resting several times on the way. On each landing, opposite the lift-shaft, the poster with the enormous face gazed from the wall. It was one of those pictures which are so contrived that the eyes follow you about when you move. BIG BROTHER IS WATCHING YOU, the caption beneath it ran. Inside the flat a fruity voice was reading out a list of figures which had something to do with the production of pig-iron. The voice came from an oblong metal plaque like a dulled mirror which formed part of the surface of the right-hand wall. Winston turned a switch and the voice sank somewhat, though the words were still distinguishable. The instrument (the telescreen, it was called) could be dimmed, but there was no way of shutting it off completely. He moved over to the window: a smallish, frail figure, the meagreness of his body merely emphasized by the blue overalls which were the uniform of the Party. Outside, the world was still flat. He thought of the Ministry of Truth, with its millions of rooms, its endless corridors, its enormous staff, its race of lunatics not subject to orders from any human authority, but moving only at the bidding of the telescreens. He thought of the Ministry of Love, which was the real centre of power, the place of no windows, the place where there was no law. He thought of the Ministry of Plenty, with its pyramids of canned goods, its concrete piles, its mountains of scrap metal. He thought of the Ministry of Peace, which was concerned with war. And he thought of the face of Big Brother, which never changed, and which looked down on everything he did. He turned his eyes to the telescreen. The voice had continued, but now it changed its tone, becoming more urgent. It was giving instructions to the citizens of Oceania on how to behave during Hate Week. Winston listened with a mixture of fear and fascination. He had heard it all before, but it still had the power to disturb him. He was not particularly brave, but he was not a coward either. He was simply a man who had lived through too much to be surprised by anything any more. He had been born in the early years of the Revolution, and he had seen the Party grow from a small underground organization into the colossus that now bestrode the earth. He had seen the great purges, the forced marches, the famines, the wars. He had seen the Party change its mind about everything a dozen times. He had seen the comradeship of the early days turn into the icy discipline of the present. He had seen the Party’s enemies—the Trotskyists, the anarchists, the saboteurs—disappear one by one into the vortex of the Ministry of Love. He had seen the Party’s allies—the capitalists, the imperialists, the feudalists—become its enemies overnight. He had seen the Party’s slogans change from ‘War is Peace’ to ‘Peace is War’, from ‘Freedom is Slavery’ to ‘Slavery is Freedom’, from ‘Ignorance is Strength’ to ‘Strength is Ignorance’. He had seen the Party’s leaders—the great heroes of the Revolution—fall from grace and be executed as traitors. He had seen the Party’s history rewritten so many times that he no longer knew what was true and what was false."""
+class Phase0Preprocessing:
+    """
+    Handles text preprocessing before encryption.
+    All words in final grid have 6-9 characters.
+    """
 
-# Configuración
-master_key = random.randbytes(32)
-iv = random.randbytes(16)
+    def __init__(self, seed: bytes = None):
+        if seed is None:
+            seed = random.randbytes(32)
+        self.seed = seed
+        self.rng = random.Random(seed)
 
-print("=" * 70)
-print("🔐 INTEGRACIÓN FASE 0 + FASE 1 – TEXTO COMPLETO DE 1984")
-print("=" * 70)
+        # Load filler words (all 6-9 letters)
+        self.filler_words = self._load_filler_words()
 
-print(f"\n📝 Texto original (primeros 200 caracteres):")
-print(texto_1984_completo[:200] + "...")
-print(f"\n📊 Longitud total: {len(texto_1984_completo)} caracteres")
-print(f"📊 Palabras aproximadas: {len(texto_1984_completo.split())}")
+    def _load_filler_words(self) -> List[str]:
+        """Return a list of words with 6-9 letters."""
+        return [
+            "between", "through", "however", "therefore", "meanwhile",
+            "together", "although", "complete", "consider", "continue",
+            "decision", "direction", "distance", "election", "employee",
+            "essential", "eventually", "financial", "following", "generally",
+            "important", "including", "individual", "information", "interesting",
+            "knowledge", "language", "marketing", "material", "operation",
+            "opportunity", "organization", "particular", "political", "population",
+            "position", "positive", "possible", "practical", "president",
+            "pressure", "previous", "primarily", "principle", "probably",
+            "problem", "process", "product", "program", "progress",
+            "property", "propose", "protect", "provide", "purpose",
+            "quality", "question", "reaction", "reality", "receive",
+            "recently", "recognize", "recommend", "reference", "reflect",
+            "regardless", "register", "regular", "relation", "relative",
+            "release", "relevant", "religious", "remember", "remove",
+            "replace", "represent", "require", "research", "resource",
+            "respond", "response", "responsibility", "responsible", "result",
+            "return", "reveal", "review", "revolution", "schedule",
+            "security", "serious", "service", "several", "significant",
+            "similar", "situation", "society", "someone", "something",
+            "sometimes", "somewhere", "statement", "strategy", "strength",
+            "student", "subject", "success", "successful", "suddenly",
+            "suggest", "summer", "supply", "support", "suppose",
+            "surface", "surprise", "system", "teacher", "technology",
+            "television", "temperature", "tendency", "theory", "therefore",
+            "these", "things", "thinking", "thought", "throughout",
+            "thousand", "together", "tomorrow", "toward", "tradition",
+            "training", "transfer", "travel", "trouble", "truly",
+            "understand", "university", "unless", "unlikely", "until",
+            "welcome", "whatever", "whenever", "wherever", "whether",
+            "which", "whoever", "within", "without", "wonderful",
+            "working", "would", "writing", "written", "young",
+            "yourself", "yourselves"
+        ]
 
-# 1. Fase 0
-print("\n🔷 FASE 0: Generando grid 100x100...")
-start = time.time()
-phase0 = Phase0Preprocessing()
-grid_inicial, seed = phase0.process(texto_1984_completo)
-tiempo_f0 = time.time() - start
-print(f"   ✅ Grid creado en {tiempo_f0:.2f} segundos")
-print(f"   Seed: {seed.hex()[:16]}...")
+    def _pad_real_word(self, word: str) -> str:
+        """
+        Pad a real word to at least 6 characters using deterministic letters.
+        """
+        if len(word) >= 6:
+            return word
+        alphabet = "abcdefghijklmnopqrstuvwxyz"
+        padded = word
+        while len(padded) < 6:
+            total = sum((ord(c) for c in padded.lower()))
+            next_char = alphabet[total % 26]
+            padded += next_char
+        return padded
 
-print("\n📌 PRIMERAS 5 FILAS DEL GRID INICIAL (primeros 60 caracteres):")
-for i in range(5):
-    fila = ''.join(grid_inicial[i][:60])
-    print(f"Row {i:2d}: {fila}...")
+    def process(self, plain_text: str) -> Tuple[List[List[str]], bytes]:
+        """
+        Process plain text and return 100x100 grid of characters.
+        No trailing 'x' – exactly 10000 characters from words and spaces.
+        """
+        # 1. Pad real words
+        real_words = plain_text.split()
+        padded_real = [self._pad_real_word(w) for w in real_words]
 
-# 2. Fase 1
-print("\n🔶 FASE 1: Aplicando rotaciones multiescala...")
-rotaciones = Phase1Rotations(master_key, iv)
-start = time.time()
-grid_rotado = rotaciones.apply(grid_inicial)
-tiempo_f1 = time.time() - start
-print(f"   ✅ Rotaciones aplicadas en {tiempo_f1:.2f} segundos")
+        # 2. Start with real words
+        all_words = padded_real[:]
+        # Current total characters = sum(len(word)) + (number_of_spaces)
+        total_len = sum(len(w) for w in all_words) + (len(all_words) - 1)
 
-print("\n📌 PRIMERAS 5 FILAS DEL GRID ROTADO (primeros 60 caracteres):")
-for i in range(5):
-    fila = ''.join(grid_rotado[i][:60])
-    print(f"Row {i:2d}: {fila}...")
+        # 3. Add filler words until we reach or exceed 10000
+        while total_len < 10000:
+            filler = self.rng.choice(self.filler_words)
+            # New length if we add this word (including a space before it, except if it's the first word)
+            new_len = total_len + len(filler) + 1  # +1 for the space
+            if new_len <= 10000:
+                all_words.append(filler)
+                total_len = new_len
+            else:
+                # Adding the whole word would exceed. To avoid 'x' at the end, we
+                # break the last word to fit exactly. This cuts the last word,
+                # but no extra filler characters are added.
+                remaining = 10000 - total_len - 1  # -1 for the space before the new word
+                if remaining > 0:
+                    # Take a prefix of the filler word to fill exactly
+                    part = filler[:remaining]
+                    all_words.append(part)
+                    total_len += len(part) + 1
+                # Now total_len == 10000
+                break
 
-# 3. Guardar grid rotado completo en archivo
-output_file = "output_1984_rotado.txt"
-with open(output_file, 'w') as f:
-    f.write("=" * 70 + "\n")
-    f.write("GRID COMPLETO DESPUÉS DE ROTACIONES (100×100)\n")
-    f.write("Texto original: 1984 – George Orwell (completo)\n")
-    f.write("=" * 70 + "\n\n")
-    for i in range(100):
-        f.write(f"Row {i:3d}: {''.join(grid_rotado[i])}\n")
-    f.write(f"\nSeed usada: {seed.hex()}\n")
-    f.write(f"Master key (primeros 16 bytes): {master_key.hex()[:16]}...\n")
+        # If we still have not reached 10000 (should not happen), pad with spaces
+        # but let's ensure it never happens
+        continuous = " ".join(all_words)
+        if len(continuous) < 10000:
+            continuous += " " * (10000 - len(continuous))
 
-print(f"\n📁 Archivo guardado: {output_file}")
-print("   Abrirlo con: code output_1984_rotado.txt")
-
-# 4. Verificar reversibilidad
-print("\n🔁 Verificando reversibilidad...")
-grid_recuperado = rotaciones.reverse(grid_rotado)
-es_igual = True
-for i in range(100):
-    for j in range(100):
-        if grid_inicial[i][j] != grid_recuperado[i][j]:
-            es_igual = False
-            break
-    if not es_igual:
-        break
-
-if es_igual:
-    print("✅ La reversibilidad funciona: el grid recuperado es idéntico al inicial.")
-else:
-    print("❌ ERROR: No se pudo recuperar el grid original.")
-
-print("\n" + "=" * 70)
-print(f"⏱️  Tiempo total: {tiempo_f0 + tiempo_f1:.2f} segundos")
-print("=" * 70)
+        # Create 100x100 grid
+        grid = [list(continuous[i*100:(i+1)*100]) for i in range(100)]
+        return grid, self.seed

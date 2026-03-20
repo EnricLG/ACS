@@ -1,108 +1,108 @@
 ======================================================================
-GRID COMPLETO DESPUÉS DE ROTACIONES (100x100)
-Texto original: 1984 – George Orwell
+GRID COMPLETO DESPUÉS DE ROTACIONES (100×100)
+Texto original: 1984 – George Orwell (completo)
 ======================================================================
 
-Row   0: -uteiehhs leautinoitent hw Osetaroierehtesn ijecs leer etten sanmredevolrnuews  igy tn tleesesibrp l
-Row   1: sn rcnptlainarp citcl whilaRssyt ldsorp stscttcervafrw mult nneov ytubletisp G.jtgtnpeo udpeuy slned
-Row   2: hdr aefineftcnednu yall.inuBesytsl iyllatrilu u,s reg rance oorc  reslil h oyIsr uro cstfurrqdergir 
-Row   3: aeernv wert ser snopossirvf n tjsotdrageiaboessfaf r tsntudeic  sugniidantxrlBrvkseiteestyev alir no
-Row   4: frfefgold et lneschebweeREHT ber vouroylyr wsomueicneentnlvaagrozft phliiluti up weiy nto o enshuegc
-Row   5: libihlibendirpmeess l rvet atorphkrp d y ephrptasohwaekw  erlscna  loeinen tlrlfstidnihrulsrtoecccyo
-Row   6: tnesdedi oraeegding eteeevetcr  ispopup gciai il  o enleioretoiityeaogr oss pe   ihnppui tniiimeto m
-Row   7: sse issyrparhdiv ref ovnos ielnoenfed c cltnttverehyleistp nnct  dusiopuo drrcrtswteemrvnittsosiehyo
-Row   8: s ytivioduhectrfrcaling  arcnt elbrnlWcogelsiag rpcenami, surgrjrnguesc orieverpmmtlonhwvrgtn  mviel
-Row   9: ocer osnipesirsieaneglasrc igetsal r iod e tfnaayltwirp Winseynteetclygnontlp reiwiunierep xowsocelo
-Row  10: ic ottaltheglwlreeyourer aeiebuboeathpeaskbaoetbnzno t btsreglrctdreo psresbcapt ewo ksemmrpmoogev r
-Row  11: dapi laurf t  eoimistegpnlv ratoeimnertb len eida phewae misniie setpe oo rimetiem ws hdeceueugosrod
-Row  12: tazhyrehttrcw taefoinoisnoivcrsohc in  fhmtdy reeu cdtds loc em Axv oceptthett oetommvp endxs oseiel
-Row  13: :edstr er oahlyee tg .sritieoeiltog  yycee  bernhtttpreettleolontrefrnr dy weecntwneul tre rri s ypn
-Row  14: et niuohkse weornciler l esrrtga ssrxrtn rnely iureruan e yluteosirepaeyyce mmo he tnehlhdnelserw rd
-Row  15: ulcrnrnhu su cu ves t ehiiaiyrhtegoe dirn oringerumtagnistnervtiie sd rt agipenteeqirrofnltn s taroi
-Row  16: er wtI gt i all.rtpwht  udivagasuelhrvnbanifuccpicocnrt tand hcdts ehriimgyesubjdualyeouitnohguoy su
-Row  17: ignigh pywowrehc s oordssigemeeogrc  egerehtityrerneteif theeclay dogosttnlrerenss s surtla babo sie
-Row  18:  stuespo onhnedigeynuaetp ssudlpn nsmr rr ylspoola,sddspelevgeemtivnmocefun ogetoluteugse tyehtetob 
-Row  19: ying tecsr eutnenglkticatuloowe eeime o taenal ps  snnohtogeatw ng r noi oeyend jt b oietrhoop nhcla
-Row  20: eiil cernoitrwnzrimaonte recmooaesrutheslecrieb ylmareat decrgcsliuonl bntauroweyee ctpo s otenturis
-Row  21: swnarIHCriht  k vantmiy bernrpgmlusee thitn meriuqusesnecipleorisvrmia laitt s rore tercalsm ntudel.
-Row  22: e aevfphpAhaopird prez wifger e evinencemseri noitprfidrareyhruv ieeztehw rat rrurfa coppouebsupeci 
-Row  23: hegrtnu  Telsrneant  eprseomsotserl ss Eiyrasif mef iexesystwpoe d wailarenrceeu tomrtprx btetslnotr
-Row  24: r d sU,jcese rtzgouegrgctal tihtltrdwgrt wns hcineedhsituehilcni poetoebtur cinghsrper eveeceo  bcap
-Row  25: ernyith,rp rdp ievplcpa eprouhemawpzoaayn estsuctcisureytm   s ontopeWs ligrhrowp elihtrw  r rteiuro
-Row  26: haitdt rvsaie yotepbcoctnfulgpzei  lhnv eeeebconetecqerlnmtde tsek.ai nr whacursfsfoser cuitercvssts
-Row  27: t innsibeeeiobs htoiesthyl ohfittlyu ieqelwlwesir whevutartdcns hdu hcoiw eeercejbusuo eengslct n si
-Row  28: piteepelo fvviisrjt roceyoheat enattptd rt aietvntteerai ebonoeehovcetuanoraa a ensottrellyaser uaob
-Row  29: ovefctvesw erullse eicikgresngrseiiopnupiipnoeneeeifimeotcufeigsiuripsgnirrebplen uwrirue  nalefnd n
-Row  30: ion ons erbromhtneere fr tg  ungind oblrnortsera oithougl ux rlp replj yfhcfdat bvheolitwvidjt lomvt
-Row  31:  revci teroupmerodlessiandat relarccr eogno liheepserenharonr ul vardtet tehhr sdeemhtrgartisrjae kd
-Row  32: ggesteint sevso diselee winslaloel lerd rvoopsewraituotteveuoye w nsiidse tlry tl ocfproerrnpyswvito
-Row  33: sohtWltiiehpp t pmornchrprmh,tricdipibleiomsuouj rubouoh suctiolw earenpry kand lhiearkegeeem  hs tn
-Row  34:  lareearnbleofewivo ultm aortspvnnwfliketleetetwteltp eljec comsta ehotlitncestiottreratsenretroemmr
-Row  35:  elpus yle pno eemoe u nrecere eea  al rtuw tvisiere s yrnbheceoantay letrtoiculose prop ecaeeveq y 
-Row  36:  dhmenorariieler niwelbiehnims sont telpeniehtemsbtl rse gnipeoj rid tlppeenf gejhe ump nkrt thiypii
-Row  37: S po therefpp emsbneemmu e tpupubingb hca or sitn  ee ovnirppvcrgro s  rbiliacheeivau metre ht stehr
-Row  38: mYfustandnipsnopi gl yltrttin iwass ivornpnen enony ltmanoitul vr truhieeturssencnob gev ofgoupfirte
-Row  39: iO sn.hp ycesth gsscgis evlecworbh inoiswr  n bepomvbrenp ylsegxitneocns quig fltglo ntieweewevil es
-Row  40: ttsl recp lapornerstsnopoursrougrbpmendeanpf inliwniihwnlisdmi ylt popmirehtccushpf itnu r, ytietrul
-Row  41: esucr cooyemund e uns neion lati  ouresule seer ohtc thruveeoitu wrnerofg ssrgors thpo pri rp lpelat
-Row  42: lidnjectnatreasdtingnecetuatlof yy sssur atvcatwreht stroorrw evgreitresle mtarequir hephioulirlrevo
-Row  43: pd iogratroprkeaortuntjuularatsiact ly tly ttnahoisirefowr utni ereehomum nolairion hglo pugelpamari
-Row  44: oymmtebrpyepton ttteser cgarhiiievanelbhfcrrhenengg alddoemee reaow  l riae  fjgniknlalidywnuohclliy
-Row  45: ile hb ru lopiysu opewteiemtvvomlirrmeme hov rb  uneot erwerseye ntheut  fonprrnmoceloru   ieietroff
-Row  46: tdrmgsittudeprlunandr ssts itugppne evolsrgitehtaefme hrp r  laudtieeiletogwpesiauq mretrsrrh  ividn
-Row  47: ae  l pohp  owpoiouboy ty evdgramdvsocln theh rerm brhtp e eepmetior,l memeiedatriergtv t imces elud
-Row  48: utgnrnn ehwt trtn ojrpjrytisrmg aget b mchsehb qte sp ioieybthgu ooyawursfreee r proyiipne rssurmuia
-Row  49: giw  e lhg sctihermrortameludil is  pereo  pedd nrhapwpisl  ngocn rottprllsscrjtelig rnutis  oogosre
-Row  50: go efrovaetg ib  peiN leeraeiosote cs Icgpear laztviplpmneesh realhtuc sebni eroing igaeiterarretren
-Row  51: enmesa eyggustbnlereGbeny silp   raeuptfnohpgisieeorulecordue Hacti onfrsonioy sategntpAcicum  sesou
-Row  52: ee rreiv i aoyaon cop yu proalnk wiaceddecafykc r et evetelesupp trfsepueeeonetafvrjeeutyWbmouroavll
-Row  53: mancSd etnpvm gjserg mernociilitndteknirger loau  weligprtancialmotperhovegkdram popevermiugssenhl t
-Row  54: btmz dnahdryeoeojot rvfioolunete th dphdasuoar nsp ron le oph re ezhredyo ye  ssaturmrelmns yltewpyi
-Row  55: eudiyorp nnrohont enevetcse uwlbregr  xlcruoutreerr  ciar evsneso fe sfmme tsba euooeeseeg sirptepll
-Row  56: varthIyl,aeaitict rewledop nelsdoe e crreiiy relucgrneveomereehr vtobeie revr renter unl folet yniwo
-Row  57: uoy u rbgtmmr trily ropeediclpui ohlho tsrhging pihoed ller getexrjeicn gethot r trosc iinstart sive
-Row  58: ohtinyoanseiefasus precomith goes waoniuoatehiniconouorbnoisgw dlerh ugnemoverof revpeto hfder gs le
-Row  59: caete,ebiitrsplsese  wel tiernissy uwtnnpm t ln hatxt eu tuoutentni ryiovaeeisivlatioshusesnts nytil
-Row  60: u rhdntmtuem   wresuhnvs quogueovealvnetneetioth ne mcatotft prpns,  hutMqetrd ent ri o eht  rgrpf f
-Row  61: fr t ksotamehpnrwheteaeit rl suipf feuryds  amuoeiee banh dnfme Ondhyeo  esrpohvndertpme tneu  g res
-Row  62: setll ycehwot opsituhgtdfacpjent hisree  umrledu gnirw gtllipefdreliorrslrro rgie thyuevae iytles re
-Row  63: sdna unttlce ri ithotra gesmgnisoile  spslae oesmmoceats ao etebnce uetuu upspurul oitemlssnhharpost
-Row  64: l niiughecraonyauld lactynoc rn b syitietionturroecemaefretaar rshesoomes .fopsefephneee sseanvilr I
-Row  65: sr rnbs re tewnbguag zzegs dteartemenefpderfss pgscwetrpoitcgnieip i romsihgna svsopetrp  ihrtlo oci
-Row  66: elnein trjrevag  wri,gni uoiorhteer  e runits n tsn psehlbornedeoftdf senevotnewo rfva madcoelamgser
-Row  67: o nondrcrts as rndtnerppryadi reesomt toernnttnulpmaehdbt inf rttpgrr erre pdo sest teaolieulycenuni
-Row  68: hthwel rre geewlu vouos nvn kruneoworwepvlesrinapfiihtdhvrjtsserpor suuitknpeaopecast stts gthustiet
-Row  69: alegehmmtvehtetnotemlert ectiggxtrolaraohwemokvrralsw stasrjba wlgod slvuv m  vooil ve ehpwhe emyotd
-Row  70: ddegahtaeteai iiyso tnt stefepsuttottirwd ereg vtnb wctbt sec raahbaurbadsvbyterpsulconheced elieeh 
-Row  71: isno-yhtv esntlt ahehtesetiec  osnpesirpfpna  seeocnfns it cat gneltsihtn .llr t rgufeurhemeeautcstt
-Row  72: ido etueegd togself b htoisiagbyyoli tdgttea inkruucere ommie poicn nopwt jiooosnnosily  rarrn  tbr 
-Row  73: setdmsshrn compy suraaveer dlnn honrc .os ccomeiirreehevteloccesrp ytaeotficcufet netpersete sueh pp
-Row  74: il no  teiween pond   yli ecpitf pteorerrfcitrunty o   iheruomewromrdluo,reeigvrlusryty hgat repoarr
-Row  75: tfrops starrnetehpf fpheandpetitrp vnevpoputishotiorppseculsopsglshy drwops ehrvs ytiionoylueceaulio
-Row  76: uorhac fihero olser n ereustrsergelmaet x srhsllponsoetoap ftuensneemageeerfwrrnmhuubistigllritcious
-Row  77:  eroc ennphdeb ttrepedc lsoo eik waltthb r oioiycnres uurawocsrioimt n   wduheed opdorpslr   tase su
-Row  78: yllayihbtf fcalpruoymledeau xrermoluseeeterubpttareleirgvlesi ehpt sosiat llivgepepeaevwt scrcresetn
-Row  79: nutr tpde p emmobisseurevnrklenior d. rthsegi aerhciredr eroVntts yltsrwope liarrvonaitart seat y wi
-Row  80: archredssausgnihreht esaitnelppeegisoung tne egaourslrhee poveranrilolutuoy uageogted troeee ,yan ru
-Row  81:  whetsrftnseinutneg ekiltptmefteht iing gnalje.m knoac sous elig nsftionoehty Ituuof es mrldtesyisog
-Row  82: d reomrttla evirpo yniara ri  mpe soly eh laerp gnizuhwssimiondeye  hercnal selvgajoessnptlcsrelzuuh
-Row  83: and er  fphehguoeht y norrotowme eltevenoitacnerligiq a srjtorkilesnistkcaeron rhgtrehtrhneeup nedb 
-Row  84: when eteetrtethshnedhp  per ehhpntinlcni beteniuestliritelu nrj iknydl it es ectnk ncpltom swdorhnho
-Row  85: trih.xvdus  ccetplufiusyt ttsebugdaypyoywondluewo nianayer ltnetyetehiveg radeves eel acrotrep yetet
-Row  86: iw jdene prhs tdeht nltg oranail trohoilly s creeempggwtjrstr ni s senirrp eetog bnsefie pllcsnarurr
-Row  87: imisllynsfe iou edahgarethetor gulgreltld irscfeysurli iifisargasst trf rtsyeopet esetiaio plfruea g
-Row  88: eriucyna d m ropneui eea oftchetnirihpca stspclrcnlte lg mtcl zleugnio-eses p arouyrwi llaro prupose
-Row  89: socs aeruoioltnossrnjrtlrpraietit ddTmeuse eoh esi relbeoo athzv ddef yrlu sertewpoow eitiin w gwhet
-Row  90: swe wpt o veevsoresur  eandlirsoicoj nrrsrer lsiern yg gvealevlep hcy dtsaulcsarwithrp s ph tisgesid
-Row  91:   dytryupcanveug reevhtrn ouo unidarretoe rpnue e srtdehsidedies ept ssis nitav ily  fwiaresir rly w
-Row  92: omotrgreteuiy tttc oyx trt ynitetjoioh wpudmserrjyousdrarrmnftuectnnqwovhanwv uemelbthrdmir tteositi
-Row  93: ilerniseings Thriersaditia nbn e tnoown t reet vtultfr epeashesedtiwuimeubj edgilaerincgrefrcsmonder
-Row  94: emmubnu ghthageol eaking  reuiclcelsd oydingaevfeeseucerrsbiologrcorire e sereos tcehicey slueomes s
-Row  95: neg  ednenotdere tm hirrasptlohl un  s wver eunisuohreoott bsibl ihtsee ze ruhcoautnloi thoeecaeeaer
-Row  96: tncflous b en yought elicipeiduasselnaemmiteo not nptlmnni y gazndenegahgtuyspesavonrslcdttespon yln
-Row  97: hli eistosis lonurfavidn noisuppiop tropsiceeitsetfau  sf lurticyoillew drttumvemereteeudi   ssaer l
-Row  98: iypusverr renaeam und tj hguarzfriueaw nseggso seirppariser orma roaerw eoaioeivi pt l rpuusseecness
-Row  99: n ln comewnaeemlconttalelthon a wtscgnitecor ni saaoere p seheretenrr r lfrsitnlrn tret orbeunnhtale
+Row   0: ftappiiaorrih gi  ttevaron iho n ejawithtld  nastorpsyadrovnedivw es ednermiching thromaprp cytiojtl
+Row   1: o  hugh ugh  eittv  rus m em unoevitlatisltjfeeubdafemetttxiah nno tirn tfoys toeivehpf havfo fsdtye
+Row   2:  gedenm  bntwarshorru deiblesgtiemost br airphh vyv t gn  .ww rebehhoh.o lg’ped ich subjdPirg f u  s
+Row   3: fndbty sraP  howeieewot all.ihjs ralrch hf irketetewam dtvy jrvfdvai ttrpaes tonion ndhpn t tceecerc
+Row   4: tv ipozicoetoljkrodhaehtw ptm uif luespo matt vxanb anpelyj ore ifrolevmt tlultytrgvfe oobocmhdtetrr
+Row   5: ioeth althfnburcppucnaiimtiegivsmoc rtunarchj fpleha t  ocksr wdrty o ealy egiijhunie pracetw iransi
+Row   6: rrlr rd do dacvavfofpnnot lsnkeiuoci’s won— ,arcbUOYtjhj tojrthhae int adenrhpc ctaled distaeitela t
+Row   7: wpia iversttvh.evfoalwgnaeanensmuyortslxessaieno dbnlenxchnooretwrtnartetivme sonah eda mo zlnuzpens
+Row   8: hdon risnbvecfrrslrrtsaehosrilsntthishj cocarmh d vcl,ontLruealitnealesoalth urlo rwe,ndbeu i elecoe
+Row   9:  deko aloj ‘ip c,yjjol easic prgh wa ttsitr eeerahelb ssionc,c munruppetis eeonat    ethmdesttburOir
+Row  10:  vo elec hlatr dtetpjrvfhoriihteld lg  yeshe,e lprstarsocvunIB svoaa cvHlasdlb sffcIrbip ol uinwoud 
+Row  11: wrwndfo etaruate rdfzisa pport dileonftsgnfolhs ue jarawueyoihcrxritPaf neuuuarokeote nfhjabrctoidel
+Row  12: hjeuuh w  rou wthz q ntwflisrpniehw  utnwollep ernsr sututycus.ih,  rxyoensqaruevmesrformv tk Re mat
+Row  13: itvzlylucdtlyypnefas ral enrotelrandicni fphvfasptnsecceja trnbd anfef ssa ectiotportipe xgewhe rscn
+Row  14: c ezehcssraWlbserp aegnoihtg rnt  ret a traee lto oap nntiwi Minvioppegiotdrn. tjs oxtumttmrn sticha
+Row  15: rednuityrutnk ee hmwhehpntjostirtdur bvggabbrprocehr snbru wanybmvoe cuuinhple uymari siieedrweeahet
+Row  16: ntrerheped feetje ert gnn xitvmdvereehpfe revfoitueejem usd tnev gntvTtd  enpf rf re noiseg jrjtofvr
+Row  17: r hoetmh nnolvhvhdnvt htedtdi oeh iioverh. wgnoh otvedpft brerpeppu er ltgesevoloysre tjoastihinfasc
+Row  18: and h oetauoeeeIte frut teaanlaot,dbng, posignitx hic ep mneneer aipauyhrre re p taaricois ost hbdh 
+Row  19:  waseseejtvesrhh lro,sts nhrsavn enilitying  esyrjeetcrhbadtfing ecrellty seevereew unoetrsm xv ting
+Row  20: oreluwpwjglmte bdhtpphehrevo sh woxprecovgestdltredenbb nhna etnnwese‘d iassniel‘.hbnorp Pare fpylla
+Row  21: reedeewlrilsbdh t wht ntt ths etanvlldireesolbmfeo naib badrhlrcurer Phcnb vdtnxS oorit  mati gnheht
+Row  22: ksn rr lg frnwhiifsehdonhiskgfhnrs   stilrapuleea hlr ne dtlafaebjnjngocslIreyt lwuvsupylf Iler ikir
+Row  23: ie r usaze Mn re pthna ftw pnpTediPmbdh e e  unrnHpe fegunnyd v l btetamtySur uraoge, wge wgu trhguo
+Row  24: nc taemopofrhsoprhiththouctbhpftenbocner somneHh zdbenatc,toottogl heniral osti t itrvfu ttjedyaecrd
+Row  25: tefn noiceabsngohsg ieps vovx ipa ic tH reme el dinealci yhrcoausbn bwsesch yrtsht rvnrddo rceeslaoh
+Row  26:  cpee ylaratiinii iinnfeitdeht eb refj nInsiytr bns’s hpb erennrs twdoivantcecafnder ssoegersnaeplt 
+Row  27: tihs amoindsgafictsn popprelt gw ed pofoe yotorcebcertewuwhor dsyOoo udidi yniW veryeserteprcitsi er
+Row  28: or pmob gum— of,hocrhfoperdhhi  tsy dsnfniretith lcirdopvota te augnrtuugsduts, o aecthehp cha lP fp
+Row  29: rotnibdiooes me rlcje nd yerehtyoplinloutaht rviagerduH eg tdiryetnd eosgtj slx pniztt ankdeI eurong
+Row  30: pftiel tgnpretruoee hsis.s rlfAtwourulatjtopfborei ehe hlyertielhtialdpheartyvjehvupfvnirohvbttlhadn
+Row  31:  npfbmtitnnes nttthhpuetdorfeh twonodtnbr r pdwm fhcjtar  mojtfl cnfonzzssGsce rdef liovipercu e voi
+Row  32: robe.nezy pzer lrbuthxe nefprvan dl re aht trhehtnnlcutdofvrrsarc fhforecrr  rn.sitttpa innarw yipb.
+Row  33: b Wxhhehghop ini  suer rulufur tlhs e fhnyrbnem hiofhunooes areoss luabddo os o seetn.ls f opdnap la
+Row  34: on  jcer cierelslchn fphsil ljgifeuldxp y eur,ylez prnbvpf b ts uiper hlgbwpubd‘l uad a tpin hdbssec
+Row  35:  redndnatheesfupec toituipuohwfsphopeletxphtrsuoe eb ddemeeeehcorgimypeectnetion efeictxjhme icyphdb
+Row  36: lackt wanednthehddscrecls eclrsitcsu dbn rdhsaw  res fphon iectitndj’s mis  renct  ntsoethe’eveeyn t
+Row  37: gabdt suhdbny po dryton nhdbloapiatrhw upour fphtalzusa rposn puIdnrial pufec tranjerrrn sretahcteli
+Row  38: scfladnbity hpf tej vom oatiif aoes deggogcooitaorgrlitnwt hcame aunres eoppf ofrorgojt ab cbntnrHul
+Row  39: dh tevoLgani reahntoecafp,edt eanrifhw ,srtugiaseH d welr thweveeh aicaneihang ttinrft inttn fpaa fo
+Row  40: wtlgbd tev uxrehxxxxjt sesggenntu epiw fesdrsopoei arvfohg ,hehpdcer xyoem ne whtwrldorpwesoostsevz 
+Row  41:  jinnihvcrotxuwtxxxxeligriuntrby likdba metttjrvefdttjrvp b xxxxus sseour, wntiohejeaet  v moehsriee
+Row  42: nroi sponrutPd gecaethircnoih d-ometfrusmrisosemyiueurtsfrewxxxxlpser dralleooteolt p emdetrrcee d n
+Row  43: ovbmbkflnu ng rnheb  hadd rr t niousirprop ihcaeonsrdnyr etoxxxxlfpecahsmillujhvuc egoceb cosuhcaese
+Row  44: ai,lec njiba lixxxxxtuohhdbt hds iehhpf  jrcr e  drhr fpneruxxfsvb xrm ethWwout nlgnucrns lotrpcfeee
+Row  45: nt euaofto d gainkinf eolibyletc reuthirs yemi dcnaeifo atooxx se cxreplasrjtnb r  ei  dti.rBigmlads
+Row  46: yubatnm  vk setvrjt  aqtrw  Tmlos r ithofphfes ntvespni hstyxxt rfoxgtofd) dgh totdbrvz  fwny e xcu 
+Row  47: o firsahtcedttixxxxxtbun rvihexiehppw fptnenrfi mrpejm j os fxxxadeeorl ions e wtnr e.thanuueculhois
+Row  48:  mprtpic svdrhvxxxxxbdow iitevryapr  ltxxeos.Wnxhpxxhsehtrhryfipwixxwspr rtrro.phaunrj-aruvr  nopnms
+Row  49: s oarulsitooeeexxxxxirilstthnfe w jMhe xxlntqibxcoxxlgptind  vb  pjtaevoti  whl tlot  shst—bmeert  e
+Row  50: sn Plueev ernrvxxxendhxxsertesxxlftised Olmrzmtr dt pifh ebfxxertrmac tisehpvrar tcuaefwlajofllahcby
+Row  51: ers ti lvroieotxxxayhexxsnrsMixxxxtoace   oplaipe s ms ezenpxxleoeweieafhw o tteecaltatlf htu tjimae
+Row  52: afislaurugtiH axxxxxxxl  eo dxxx  nar,ax jr.xe rxxytrofwindohsoltqh v yoenertn gio behtp tejmbf Heho
+Row  53: ams a llia l d xxxxxxxuotrmfexxxlmilathxxhndxHraxxecnoce oppdn lr rbeh cxlwp pf rnasrnehe ctadrte ep
+Row  54: aer crednlgeznhx,hcrxxxfhgopdo epotSe exx shx ewxxrw tj propbo,alpjdfpd tre .iskaugntfiegno bhomnose
+Row  55:  tjriascxknwohtxphdotnew nsiscgvxxxxmyhxxrt ‘t didheht hpf Hvfo irthp opmmehtrjtmpheft,if f  yo bber
+Row  56: ct tlcosuoigxxxxxx f relussreretxxxxtrnxudlrn witlnvjrstigI h qsre einvuai eed rhlinime-hdrpc wrirrt
+Row  57: fiwioiyesereewcnxxrlt toverneerFhehtgeoxhtiwh an   raciHonNtheht sawsotolhtndhpfaanxprwheathoeirhft 
+Row  58: loaopt ce harhogxxe wer,’yroepaeah nnmixT xlintlhf ooitoniGhoisicen forcitjaeactntevfitthhr wvnpt  d
+Row  59: xnsn rtorectsim xxsa dirutsld erfphee txi ri ht tpywfo t,z erehtendrf Itm rstnb disr gn T afaegnydfb
+Row  60: ngishp r serirtdselrf ytiddme vet ndlaerhnns flati tfgrs. utal tofpsni tsevl the ehejleidir  whuserp
+Row  61:  lfpd tv kneet nnsaap ecii etitmsuonvreserirb bo tpa  oyt:r tnb npuero fslno, whhs  liioyrehdhphoeht
+Row  62:  tnetwrffeeti eao elralugtwsanao hdaer thewo somytuhPsushwfb the hogboc rbit suga,cfds nbahd po  tuo
+Row  63: hcetcseyprbj tcscfru fpheih.ra sriu ht htv tith,tuywetgtgo n iscdrjioyhduaks. sud oolto notbent itse
+Row  64:   treehpf wi tdndpnfneuqee mer tsffatn  vif-e gserom hnpyltio fphehhrbegehadtonyvsures eugehskvavoeh
+Row  65: h thvxfb rbouemzhh  buohhsaaregrruqbphehdenrndtndhtgfnsooc db  drpociavoetfh regese tcasp fevinleucp
+Row  66: vabdrnpab duomorperj afrp bb ,eefsenphehnitilityhs epe iwor. heegotcsp peu taninr daaadfehpcvrj lgef
+Row  67:  ighjihmne s supfhersned eoth rca retropi,o , SminuthctriW tnctmor esfprtoget hn tivlrufrejiacefnani
+Row  68:  o irogmtet te sy toalsehtarbrthft tnertfttssstairorlelypmf roehlpdeivcepf nhexxeomocneHpic dnhierha
+Row  69: tlttcieajyho Iowmplot esmizeomn ft foirevosiiejsbnosericllpmelxxefguheical bncxxlnedu zhnrifeomoh tr
+Row  70: ispkrofPosfyroucreveus ,tjsgrhmluthcphdbssolwe u aentrrtetw ihxxwlq f eeo sctoxxrhe  nit tThmiofindo
+Row  71: aohtod  p lxpose sloute orogjpuyght cnamrt fsaAa. tojjedfasnotxxt ogplnvnthsxvbnptyegehr, etf rf him
+Row  72: ert rmtttjh’ po tac  lgarrheoem ang fpheo rjrg wtdhtlspolomfxxxpruofhftei dtexxxd imap im not   ge g
+Row  73: rzepepy itni jsrjlfiweu dhineh spurtub eni t ag y rutabdewp,xxxforhoeclrip oHxxxnftswnatsustpor  dim
+Row  74: a to.l b ccoseenrllnavo,swerf lcropeht fi f rr e tphcrattie xxx evi hnyaojth xxxica hw p terd.ejerat
+Row  75: mces ytrvemojncevzxtsard , plp hx r thehnoctdg eezpreng h,adeseaethtvrwise thxxxfphenolhsge alascfri
+Row  76: fw retheeez h  uteytolpm   pcehte’ rihjrssmtnsfdcerenfw p dearruntjnronb xlfdh tae hdnauj n vrjtt yl
+Row  77: psg al a rzWehrfrrrgetaHuteha ticonhngr   i odswerovc trftern cttrebhoHaaintxxxxcfu  isapoepmousone 
+Row  78: htnqganshg arttoooonohtlijr.r rirouoauvfrn tatzgogtorlne erscth  ma y l meijxxxx  lyrsurvre,mesoo ev
+Row  79: dii,ereshtwre s pfeetuohyrinot yy phgofpetnjentrarelea tHnstihelf tib  t tfoxxxxhgilekpelawej beaf ,
+Row  80:  wypo. t yvezwhiid—s ezivxtaioocjiiat lvh puaoolladnhieresseT pi rav fwtucCjee ophehtsesajnotliwetti
+Row  81: ba l e, r ne parihti eer srntr  srwt idihtuaytrtaio awvaeviers nfacifisaxxxxv Wuthguieheyt w vdlaugn
+Row  82: eboihvyeettaAtweeg y bntnevnntwsow rsmfeitar c nftdnn iPdbecouogeoiresthxxxxorAtlair mtol seleeeehw 
+Row  83: sdpngoaemhhcpv snasuhw nocfataute xoiplwcni ehab nW gee cer tbn niserpiwxxxxleTelpmidi titrjge les p
+Row  84: sciefsghH  ontpTe iotato fp zi ieitnd it wastvrysunlc thhrjeevrda’ttd yoeh preehth lrno xxcmrxxx:sar
+Row  85: rilsdp oERzi hrOrplta  cptzrwonut,uislvijdrnir o sxvthouputrvetrl hi annxnotalhtatdlfvrhxxaeoxxxsxxx
+Row  86:  noealmuodilaoiRar,wztte ur hgchtddn kxttni ljpdy of Henfl  eoso ce tjr xj acep m lod d xxltgxxxrxxx
+Row  87: essntrp eintndrzli riqbryoeemoy neeuzcna btWrudisl yttea canentyloglred xbdhtcfe dufdnbsnihgdw guxxx
+Row  88: iayrars su wrsa oe brotetcerteisjr ooichtdyena btaeocbrgrF mtgbsre ylh slsene waesctjonalcdiaitpasxx
+Row  89: dmlgniraamert e rpri thihngo v ohtsgmcuih ,egs.kddlwhdsuetamrhdohtinrdt xvpr—thecro a ah hbhihw mexx
+Row  90: ehjhdljnawn ilepppphodeng wedeehhdaestort anit yteV r y b vmetreorouk hibd oieh.tjsrisiyitsjh kxxxxy
+Row  91: rwrcraoptjenrasu aelinhgple icrtopco,eelivwoM ecnehdn erdtrbn  rswBg.tim arprr   teen tcoskechzxxxxo
+Row  92: gieaseesteggab jthir vz netn erssp t ktelk i dhnbngnihtdh ferofeebiv’.pser shim.ot srrmr  aiourxxxxx
+Row  93:  wcieam amnionere trsr atobhBu ieereoi so.ettntenrew tcace eneH tthgye otor empl tnejgiow,leofvx nxx
+Row  94: tatgrfphfcbt bennsheu dyehtxirvfrp pfnMspwtuca—deurneesy fliws nygothou rpeH henler  errr p iddxfexx
+Row  95: es uivfo td -ir aoefcrecrevltnitdnccvgifn lpihehpfb vdtgxaeres g nuos Sba yls. tatioudyn b yHenxnsxx
+Row  96: olonStrntdfo. ef lneiactup dt os santsilitlriautorrf easeteipdv n rnfphdnaolej tubeac  spdtehhtfxxxx
+Row  97: ws t.b srnop ahi.folhwiho narehwn’, rtsish.onpscrftosvb cudalsrwhsaorehtbnvloyeeonvrtrwrhn(hpen xxxx
+Row  98: vetaj Iistguelswneibw tghtombevEus. ar ltewtu  ij bytadouroly  heimtR esdtiibdh htopsei biowfhbwreve
+Row  99: lf ,nb b‘ jtrui orta zciihteextk ed uqerrs ecal rezzhn ftem  bwewmixsnoph deroubtjm ,stsuhp u xxh nt
 
-Seed usada: a12d46c618990c5c057ec5173288209ea6921f12f225d6792eabef92fe4fc4b9
-Master key (primeros 16 bytes): 12194dd6db3f26d9...
+Seed usada: c6a84ec9cebf784be73778b46b37eebe32bac9539b6785d6ae6e2ac9be9ca5d5
+Master key (primeros 16 bytes): d5991b4d2b3a73bd...

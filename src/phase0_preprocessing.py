@@ -1,8 +1,9 @@
 """
 Phase 0: Preprocessing
 - Converts plain text into 100×100 grid
-- Pads real words to at least 6 characters
-- Filler items: words (6-9 letters), names, cities, times, numbers (5 digits)
+- Pads real words to at least 6 characters using **random but deterministic** padding
+  based on the seed and the word's position.
+- Filler items: words, names, cities, times, numbers
 - Dynamically adds filler items to exactly fill 10000 characters (including spaces)
 - Final grid contains only words/items and spaces, no extra 'x'
 """
@@ -29,7 +30,7 @@ class Phase0Preprocessing:
         """Return a list of filler strings: words, names, cities, times, numbers."""
         items = []
 
-        # 1. Words (6-9 letters) – same as before
+        # Words (6-9 letters) – same as before
         words_6_9 = [
             "between", "through", "however", "therefore", "meanwhile",
             "together", "although", "complete", "consider", "continue",
@@ -67,7 +68,7 @@ class Phase0Preprocessing:
         ]
         items.extend(words_6_9)
 
-        # 2. Names (50 male + 50 female)
+        # Names (50 male + 50 female) – same as before
         names_male = [
             "Liam", "Noah", "Oliver", "James", "Elijah", "William", "Henry", "Lucas", "Benjamin", "Theodore",
             "Mateo", "Levi", "Sebastian", "Daniel", "Jack", "Michael", "Alexander", "Owen", "Samuel", "Ethan",
@@ -85,7 +86,7 @@ class Phase0Preprocessing:
         items.extend(names_male)
         items.extend(names_female)
 
-        # 3. Cities (100 cities)
+        # Cities (100 cities) – same as before
         cities = [
             "Amsterdam", "Athens", "Atlanta", "Auckland", "Baghdad", "Bangalore", "Bangkok", "Barcelona", "Berlin", "Bogota",
             "Boston", "Brussels", "Bucharest", "Budapest", "BuenosAires", "Cairo", "Cancun", "CapeTown", "Caracas", "Casablanca",
@@ -100,14 +101,14 @@ class Phase0Preprocessing:
         ]
         items.extend(cities)
 
-        # 4. Times (HH:MM format)
+        # Times (HH:MM)
         times = []
         for hour in range(24):
             for minute in [0, 15, 30, 45]:
                 times.append(f"{hour:02d}:{minute:02d}")
         items.extend(times)
 
-        # 5. Numbers (5 digits each)
+        # Numbers (5 digits)
         numbers_5digit = [
             "48219", "73506", "29184", "56723", "84901", "12378", "90546", "37815", "64290", "21657",
             "75943", "83412", "47068", "19532", "60387", "52841", "97605", "34129", "81074", "25763",
@@ -119,17 +120,31 @@ class Phase0Preprocessing:
 
         return items
 
-    def _pad_real_word(self, word: str) -> str:
+    def _pad_real_word(self, word: str, index: int) -> str:
         """
-        Pad a real word to at least 6 characters using deterministic letters.
+        Pad a real word to at least 6 characters using a deterministic pseudo‑random
+        suffix based on the word and its position index, using the object's seed.
+        The same word at different positions will get different suffixes.
         """
         if len(word) >= 6:
             return word
+
+        # Use a separate RNG based on seed + index + word to generate suffix
+        # This ensures the same word in the same position gives the same suffix,
+        # but different positions give different suffixes.
+        # We'll use the built-in random seeded with a hash.
+        local_rng = random.Random()
+        # Combine seed (bytes) with index and word to create a unique state
+        import hashlib
+        state_bytes = self.seed + str(index).encode() + word.encode()
+        seed_int = int.from_bytes(hashlib.sha256(state_bytes).digest(), 'big')
+        local_rng.seed(seed_int)
+
         alphabet = "abcdefghijklmnopqrstuvwxyz"
         padded = word
         while len(padded) < 6:
-            total = sum((ord(c) for c in padded.lower()))
-            next_char = alphabet[total % 26]
+            # Choose a random letter from alphabet
+            next_char = local_rng.choice(alphabet)
             padded += next_char
         return padded
 
@@ -138,9 +153,9 @@ class Phase0Preprocessing:
         Process plain text and return 100x100 grid of characters.
         No trailing 'x' – exactly 10000 characters from words and spaces.
         """
-        # 1. Pad real words
+        # 1. Split real words and pad them with index
         real_words = plain_text.split()
-        padded_real = [self._pad_real_word(w) for w in real_words]
+        padded_real = [self._pad_real_word(w, i) for i, w in enumerate(real_words)]
 
         # 2. Start with real words
         all_items = padded_real[:]  # list of strings (real words)

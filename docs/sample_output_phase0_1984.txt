@@ -1,107 +1,104 @@
+Phase 0: Grid after preprocessing (100x100)
 ======================================================================
-GRID COMPLETO DESPUÉS DE FASE 0 (100×100)
-Texto original: 1984 – George Orwell (completo)
-======================================================================
+Row   0: Itssun wasgzj ajviqg bright coldwl daydov inzpwm April, andoez thekhc clocks weredf striking thirtee
+Row   1: n. Winston Smith, hisgis chinog nuzzled intohf hisoqg breast innzri anrysv effort tobqbh escape thej
+Row   2: pp vilewn wind,u slipped quickly through thesmg glassm doorsv ofyzhv Victory Mansions, though notgss
+Row   3:  quickly enough topbno prevent aiyvgx swirly ofrqxi gritty dustzn fromwm entering alongo withhe him.
+Row   4: vq Theybo hallway smeltg ofwrls boiled cabbage andryf oldqln ragqoc mats.m Atrmzu oneajh endsbl ofcz
+Row   5: lq itlaon anfzqd coloured poster, toohla largef forqnt indoor display, hadkbn beenur tacked toxvti t
+Row   6: heyha wall.e Itduzs depicted simply aneszf enormous face,l morepy thanve aifsdv metreu wide:z thekvg
+Row   7:  facenw ofirie abhljq mandtx ofqjsq abouth forty-five, withfz acvaqr heavyd blackw moustache andcvn 
+Row   8: ruggedly handsome features. Winston madefk forxoe thecgs stairs. Itezzg wasrph nodopt useuti trying 
+Row   9: theyag lift.s Evenkr atehnz thessv bestxj ofitqw timesy itppeu wasjob seldom working, andcqf atzvby 
+Row  10: present thelod electric current waslfg cutopw offmtv during daylight hours. Itucla waswmp partbi ofg
+Row  11: imt thetzd economy drivep inpojs preparation forlkc Hatevu Week.i Thecxd flatcf wasbjn sevenq flight
+Row  12: s up,urz andwma Winston, wholao wasvsn thirty-nine andure hadnyc aqwbvd varicose ulcerj abovej hisxq
+Row  13: w rightx ankle, wentqs slowly, resting several timesm onxvun theojw way.uu Ontttp eachxs landing, op
+Row  14: posite thecku lift-shaft, thepid poster withse thenma enormous facetm gazedp fromik theyro wall.l It
+Row  15: rkqx wasvjr onepnk ofxkkz thoseq pictures whicha arebce sobvzg contrived thatbn theorw eyesrh follow
+Row  16:  youihk aboutt whenzg youpju move.f BIGylb BROTHER ISnieu WATCHING YOU,rr thenki caption beneath itt
+Row  17: pof ran.lw Inside theeau flatkq axrmvx fruity voicen wasobh reading outhjf aripom listgl ofiavx figu
+Row  18: res whichy hadyco something toyefq dodclb withlf thejds production ofztki pig-iron. Theecv voicei ca
+Row  19: mehk fromtu angqss oblong metala plaque likekx asnypv dulled mirror whichx formed partiu ofyqde thez
+Row  20: ge surface oflhod thevvy right-hand wall.u Winston turned adztrg switch andacm theypy voiceu sankxx 
+Row  21: somewhat, though thehth wordsd wereet stillh distinguishable. Thejhv instrument (themd telescreen, i
+Row  22: tdzfd waswcq called) couldr bevwcd dimmed, buttiv therec wasuug noilwg waytfo ofwyqz shutting itwfpf
+Row  23:  offoau completely. Henyfw movedt overwq tordlw thenty window: ahwfky smallish, frailx figure, themt
+Row  24: t meagreness ofybbo hisoeq bodynw merely emphasized bywmnr theddh bluepa overalls whichl wereqk they
+Row  25: mw uniform ofpsax theoor Party. Outside, theigb worldu wasysa stilla flat.y Hempgd thought ofbcnf th
+Row  26: ewfy Ministry ofkvqv Truth, withcg itsccq millions offvlc rooms, itsilm endless corridors, itsmdx en
+Row  27: ormous staff, itsxfn raceve ofvtyb lunatics notxhp subject toelvl orders fromfj anyhuu humanl author
+Row  28: ity, butbdt moving onlyfb atbezx theegc bidding ofssob themku telescreens. Heblma thought ofealf the
+Row  29: gyk Ministry ofatxb Love,u whichn wasqef theocw realbt centre oftezz power, thereu placeq ofyobc not
+Row  30: ndb windows, thebkj placek wheren therey wasswn nokgii law.yx Hepoer thought ofepyu theknk Ministry 
+Row  31: ofoozh Plenty, withvy itsbxy pyramids ofqxaf canned goods, itsanx concrete piles, itsxyx mountains o
+Row  32: fkjfm scrapp metal. Hewnjc thought ofqzaa theymx Ministry ofrpcm Peace, whichw wasvid concerned with
+Row  33: mt war.oi Andcra heuqyq thought ofsmwp thekmb faceun ofvgnv Bigjok Brother, whichq nevers changed, a
+Row  34: ndjky whichp looked downmj onxfzd everything heuqlf did.if Heswdq turned hismjb eyesol toezcp therfv
+Row  35:  telescreen. Thedzf voiceb hadcmu continued, butmoo nowyvb itqpau changed itshsj tone,t becoming mor
+Row  36: etm urgent. Itysci wasktq giving instructions toofub theenw citizens ofjkjk Oceania onttal howuja to
+Row  37: vugw behave during Hateoz Week.a Winston listened withvp advpym mixture ofycfj fearld andrxc fascina
+Row  38: tion. Hedcft hadetv heardr itrbwb allufn before, butjbp itcdhd stillj hadtqa thexgd powerm tosllz di
+Row  39: sturb him.hr Hetxks wasszh notrng particularly brave, butvsf helvto wassgn notctq armbou coward eith
+Row  40: er. Heexxz waslju simply akypql manpqq whojjb hadham livedq through tooeoy muchky toaaua bexycm surp
+Row  41: rised byuciw anything anyyzq more.k Herdvc hadrxi beenra bornne incvpt theljd earlyt yearsw ofkpou t
+Row  42: heusy Revolution, andhpy hevfqd hadiai seenoe thegek Partym growfs fromcc ayevaq smalld underground 
+Row  43: organization intotx thetdt colossus thatoo nowrdf bestrode thetxc earth. Heldcn hadjkx seenra thehkh
+Row  44:  greati purges, thenmj forced marches, theyvg famines, theeut wars.k Hesnlf haddrf seenbn theqwx Par
+Row  45: typ change itsbps mindvs aboutr everything aozjut dozenz times. Heehxw hadhbb seenuz thexzg comrades
+Row  46: hip ofnotf thectj earlyl daysal turnbx intouy themnl icylgs discipline ofixgz thencd present. Hejwki
+Row  47:  hadobz seenlx thecdf Party's enemies-the Trotskyists, thetve anarchists, thekpu saboteurs-disappear
+Row  48:  onekdr byxwjv onevce intofc thelil vortex ofsshk thefsl Ministry ofnupt Love.t Herkno hadpyv seenua
+Row  49:  thefol Party's allies-the capitalists, thedur imperialists, thehge feudalists-become itscnf enemies
+Row  50:  overnight. Hefdks hadfxx seensh thexdv Party's slogans change fromoi 'Warwe islnih Peace' tomzof 'P
+Row  51: eace isnmzs War',c fromof 'Freedom iswqpw Slavery' togmma 'Slavery isgpoy Freedom', fromxv 'Ignoranc
+Row  52: e isvktp Strength' topgvk 'Strength ishlus Ignorance'. Hehzqq hadixr seenxo theakr Party's leaders-t
+Row  53: he greats heroes ofxedv theppd Revolution-fall fromqj gracej andsxi berris executed astevb traitors.
+Row  54:  Heqrsz hadxfr seenxg theicc Party's history rewritten sophds manyuw timesk thathq hegvpa noiwox lon
+Row  55: ger knewmt whatxs wasmmq truekt andfah whatik wasfes false. 01:45 technology 52841 material financia
+Row  56: l James through Sebastian whatever process Kennedy 20:15 Port-au-Prince Dhaka Kyiv Sebastian knowled
+Row  57: ge 16:00 Athens 01:45 18:00 Hanoi 96520 01:45 Elijah 23:00 20:00 Sofia complete 02:30 Evelyn Birming
+Row  58: ham unlikely Jerusalem 37815 00:15 Jakarta NewYork 05:45 within Ava Zurich 01:30 theory 19:45 84901 
+Row  59: important remove CapeTown thinking Aubrey product Sofia process Dubai Vienna Kennedy Michael 64290 1
+Row  60: 6:30 12:30 LosAngeles generally Gabriel return AbuDhabi 21:45 07:15 17:15 79815 Camila Istanbul with
+Row  61: in 14:30 things 43985 program 39425 recommend 17:30 13:00 reveal Amsterdam Charlotte 08:15 provide p
+Row  62: rovide 01:45 TelAviv Grace relation 12:30 operation 02:00 12:00 product Jackson Madison Isaac progra
+Row  63: m Zoe language pressure situation Angel 12378 08:00 Taipei tradition 15792 79815 02:15 material Mani
+Row  64: la Seattle Leah pressure 07:15 86539 unless operation Audrey 09:30 Kyiv subject religious Madison 81
+Row  65: 746 21:30 Anna success SanFrancisco 05:30 Tokyo responsible reality 47329 10:45 subject 16:15 08:15 
+Row  66: London 13:45 08:30 56083 Washington tomorrow through Houston 14:45 somewhere Miami 00:45 information
+Row  67:  19:00 system Munich population Benjamin following Ella 10:00 progress 91680 Kyiv 17:30 Charlotte Av
+Row  68: a throughout 03:30 interesting yourself Shanghai somewhere NewOrleans Christopher Stockholm Ethan ev
+Row  69: entually Eleanor thinking 15792 purpose 91680 NewOrleans replace regular Ryan important 20:45 Melbou
+Row  70: rne Nora writing 19:30 Manila population 04:45 wonderful Sofia Charles 20865 37815 02:00 Isaac 22:15
+Row  71:  Bella Josiah individual 68970 52841 Harper 15:45 70291 regular Santiago remove regular Jackson Wars
+Row  72: aw 91680 03:15 security Amelia return 00:30 Luke 62340 Aubrey suggest Christian protect 09:00 essent
+Row  73: ial Mia thinking 04:15 Jerusalem 03:30 15:00 Barcelona 35264 continue 17:45 Claire 08:45 64290 Baghd
+Row  74: ad Hazel Henry Mumbai travel 48219 Savannah NewYork 94056 16:00 52173 Johannesburg Boston provide Jo
+Row  75: siah unless 19:45 reference probably 00:00 although 22:30 Harper direction direction following writt
+Row  76: en Camila operation Zoe 19:00 direction election Bangkok Grayson somewhere whether remove someone se
+Row  77: curity 08:00 Vienna AddisAbaba Mila Kennedy Montreal 39425 Rio 17:30 interesting AbuDhabi Sofia Audr
+Row  78: ey Oliver 16:30 16:45 12:00 relation 20:15 71384 protect organization Rio 83659 Evelyn thinking gene
+Row  79: rally Dhaka 11:45 Osaka reflect 05:00 18:45 Melbourne Nairobi 10:45 Luna Montreal Dylan 05:00 Athens
+Row  80:  population 03:00 regardless together temperature meanwhile yourselves Guangzhou young Genesis respo
+Row  81: nsibility Bangalore 21:45 Andrew 19:30 Kuwait 23:15 Auckland Tehran 16:45 remember previous 23974 Au
+Row  82: ckland Savannah CapeTown however language 11:00 summer 01:30 Ethan recognize Lincoln 47068 11:00 Eth
+Row  83: an 19532 21:45 17:15 MexicoCity Daniel reveal 23:00 including Carter recently unless SaoPaulo Grace 
+Row  84: London Vienna reflect 20865 19532 thought Liam research property 36821 question writing Johannesburg
+Row  85:  position probably would successful Theodore 25763 statement progress 01:30 Joseph Julian teacher Li
+Row  86: sbon somewhere Melbourne Miami whenever someone Sydney essential 03:30 result Copenhagen Kuwait 22:0
+Row  87: 0 06:00 young Stella someone between Barcelona Delhi Lisbon wonderful property including support Lim
+Row  88: a Riyadh 10:00 positive operation Kuwait Harper 03:00 distance 20:00 12:45 Copenhagen Casablanca Los
+Row  89: Angeles NewYork 04:00 between 34129 Audrey represent 84901 teacher 21:15 94056 marketing responsibil
+Row  90: ity 70291 Sebastian complete things Warsaw 13:30 although Prague Zoe Kolkata 04:45 47329 Elijah 5284
+Row  91: 1 13:00 02:30 03:15 05:30 MexicoCity 19:00 Leo 73506 09:45 Emma 12:30 teacher Caracas 15792 Noah pra
+Row  92: ctical quality teacher something successful Adam Owen support 12:30 whether thousand Christian Theod
+Row  93: ore 86539 Claire Ella 12:30 security Lima 03:30 Mila replace distance Joseph 14:00 Budapest SanFranc
+Row  94: isco Doha meanwhile return 18:45 together 91680 written register 11:45 SaoPaulo financial 23:00 08:0
+Row  95: 0 14:00 Port-au-Prince Gabriel 09:30 07:30 Bogota these 04:15 20:45 04:00 17:45 Bangkok 00:00 Brusse
+Row  96: ls generally SanFrancisco Oliver written James 05:30 Joshua student therefore Nora Guadalajara Sophi
+Row  97: a Ava Leo 19:15 progress operation 11:15 understand similar Atlanta knowledge together 18:00 03:00 t
+Row  98: oward Kyiv which 23:45 president whether Dubai problem Anna principle Luke Caleb 07:30 BuenosAires I
+Row  99: stanbul Aria Birmingham Adam Brussels 17:45 Casablanca Manila 06:45 Leo Chloe 25763 Oslo 08:45 Chris
 
-Row   0: Itcbbw wasjzq attdoe bright coldkc daydvx inhbdr April, andsav thekol clocks wereva striking thirtee
-Row   1: n. Winston Smith, hisjtk chinrx nuzzled intodx hismal breast inquyf anmlcr effort toeigj escape theo
-Row   2: wh vilevy wind,w slipped quickly through theubg glassp doorsl ofsqrc Victory Mansions, though notxvl
-Row   3:  quickly enough toipis prevent akpwwr swirln ofkrzd gritty dustwe frommn entering alongz withut him.
-Row   4: yf Thenhi hallway smeltu ofqtcp boiled cabbage andxyc oldqik ragbre mats.v Ataxrc oneodg enduoo ofma
-Row   5: wd itxmiw assnio coloured poster, toodrf larged forwsh indoor display, hadnnb beenxq tacked todtla t
-Row   6: hefcm wall.o Itlefv depicted simply anjcap enormous face,c morecu thanrw asjeqn metrea wide:k theaco
-Row   7:  facefd ofuomv aqbycf maniza offznr abouts forty-five, withsk ameuqf heavyz blackv moustache andwkq 
-Row   8: ruggedly handsome features. Winston madeec fordgf theaxz stairs. Itcoaz waswgb nokbpn useqyh trying 
-Row   9: thevyp lift.l Evenwd atvhgc thejyt besttx ofrpab timesw itxlzf wasnmz seldom working, andbxf atogbo 
-Row  10: present thefsj electric current wasjzs cutnyj offvsu during daylight hours. Itfkbu wasgbd partyg off
-Row  11: kdy thejla economy driveq infpso preparation forymk Hatecc Week.c Theijj flatou wasfap sevens flight
-Row  12: s up,lvi andvmj Winston, whoedb wasvee thirty-nine andpfj hadgpv ahizmt varicose ulcers aboveb hishf
-Row  13: v rightu ankle, wentpt slowly, resting several timesn onkeyf theazt way.iu Onnafk eachgo landing, op
-Row  14: posite thexyb lift-shaft, theyag poster withev theqhw enormous faceep gazedk fromtn thehqn wall.m It
-Row  15: obfd wasbpv onexxp ofwmvl thosew pictures whichk arerkm sodiim contrived thatbf thepod eyesin follow
-Row  16:  youniq aboutj whentq youpgy move.h BIGank BROTHER ISzolt WATCHING YOU,lc themvq caption beneath itj
-Row  17: zam ran.kn Inside themlr flatrl aaqhal fruity voiced wassxi reading outuab awqtdz listbn ofbuyz figu
-Row  18: res whichh hadbfk something tockda doupuq withol thepdg production ofpvyi pig-iron. Thejtt voicem ca
-Row  19: mepc fromay ancmou oblong metalh plaque likelu akmgqf dulled mirror whichc formed partwt ofgdin thew
-Row  20: vl surface ofqiew theaqq right-hand wall.k Winston turned asjkiz switch anduqi thebwy voiceg sankuf 
-Row  21: somewhat, though thenri wordsr werezg stillr distinguishable. Theahs instrument (theky telescreen, i
-Row  22: tycto wasxjs called) couldo bemely dimmed, butlxu theree waszdj nospek wayubf ofityc shutting itvkob
-Row  23:  offhbv completely. Hetlal movedu overux tojmdm thewvn window: ainlxd smallish, frailq figure, thebo
-Row  24: a meagreness offrcz hiseih bodyru merely emphasized bydgqq thexpa bluekh overalls whichu werejy thel
-Row  25: sc uniform ofulds thekrn Party. Outside, theuto worldx wasdsw stillv flat.c Heehbk thought ofvrxu th
-Row  26: ercw Ministry ofqxkv Truth, withtl itshub millions ofnqtx rooms, itsgau endless corridors, itspdt en
-Row  27: ormous staff, itsuvp raceoc offhbb lunatics notwjs subject towjzi orders fromrl anywre humann author
-Row  28: ity, butcbv moving onlysa atuqac thesof bidding ofzepl theyuu telescreens. Heclos thought ofyqnp the
-Row  29: lhs Ministry ofrjul Love,l whichl waspkp theesg realxi centre ofikfq power, thentc placez ofrwvh noc
-Row  30: uqa windows, thewyo placed wheree therep wasgxw noedxa law.hc Heopos thought ofvnbb thewnu Ministry 
-Row  31: ofkhlf Plenty, withme itssbv pyramids ofuvmy canned goods, itswee concrete piles, itsxhb mountains o
-Row  32: fbkvi scrapc metal. Hezpfk thought ofeyen thenxl Ministry ofxxam Peace, whichh waslaf concerned with
-Row  33: xh war.nu Andkcr hejzwv thought ofxlgs thecbl faceqm ofcacs Bigfgs Brother, whichi neverq changed, a
-Row  34: ndzac whichd looked downhd onzngt everything hegzwj did.qr Hemtlb turned hishdl eyesbl topclr thecfx
-Row  35:  telescreen. Theydq voiceo hadopl continued, butxgb nowcgk itrugi changed itsamh tone,h becoming mor
-Row  36: etl urgent. Itxcub wassko giving instructions tovtyr thedze citizens ofvwld Oceania onvufp howpgx to
-Row  37: itau behave during Hatelk Week.n Winston listened withlq ajjdqj mixture ofekwh fearoc andlmp fascina
-Row  38: tion. Hemmqq hadbhc heardr itmhok allsuq before, butzfd itrvqr stillr hadsiq theqpn powerw tokqwh di
-Row  39: sturb him.rl Hekuea waszxq notghh particularly brave, butvrq helepm wasxzo nottvz asmhcn coward eith
-Row  40: er. Heamrs wasfhh simply awzucy mandfb whoyri hadcdv livedw through toofzl muchba toamou belsbi surp
-Row  41: rised byetym anything anytgo more.c Hefmkk hadbdj beensc bornuu inrgfv theips earlyy yearsu ofeiya t
-Row  42: heuml Revolution, andrgk heojnu hadiil seenzb thexvg Partyu growor frommc annxca smallu underground 
-Row  43: organization intozu thermq colossus thatop nowmog bestrode thegcm earth. Heweez hadjmd seendw theohf
-Row  44:  greato purges, thetvt forced marches, thehty famines, thempz wars.b Hehqyq hadwhn seenxo theojp Par
-Row  45: tyn change itsckl mindid aboutf everything adybqi dozenk times. Heupfi hadpro seensq theaww comrades
-Row  46: hip ofdvgs thevoz earlyt dayssh turndc intokg thejwe icyfax discipline ofkuxl thegco present. Heitpo
-Row  47:  haddqc seenwf thejum Party’s enemies—the Trotskyists, themhz anarchists, theyim saboteurs—disappear
-Row  48:  onebgl byeiir onehsp intofq thezxx vortex ofsnqa thefjr Ministry ofzfgq Love.f Hepomu hadega seenuc
-Row  49:  thefvc Party’s allies—the capitalists, themnm imperialists, theagd feudalists—become itspnk enemies
-Row  50:  overnight. Hetaxg hadhan seenlr thepba Party’s slogans change fromyn ‘Warkr isatwd Peace’ tocnqd ‘P
-Row  51: eace ismaet War’,t fromuw ‘Freedom isrbma Slavery’ tondns ‘Slavery isarlv Freedom’, fromak ‘Ignoranc
-Row  52: e isjmck Strength’ tobuik ‘Strength isbhsg Ignorance’. Hebsfo hadnsm seenge thewqx Party’s leaders—t
-Row  53: he greatg heroes ofzkpp thehqf Revolution—fall fromma gracem andgmz bevkyn executed asblrj traitors.
-Row  54:  Heqafh hadvzk seenjr thetsp Party’s history rewritten sodxml manyhb timesd thatob hebkku novuay lon
-Row  55: ger knewye whatql wasjfa truezt andenp whatzl wasmqm false. SanFrancisco Charlotte somewhere Kyiv Li
-Row  56: ly transfer Ella 70291 things 20:30 suggest return whether thought 09:15 Luke Lincoln Nathan 09:15 L
-Row  57: ayla 22:45 teacher knowledge Bangalore reference Bangkok Baghdad 90546 06:00 80427 91680 toward 00:0
-Row  58: 0 financial problem 02:00 Guangzhou Bucharest surface Michael training marketing AddisAbaba interest
-Row  59: ing 09:45 21:45 Benjamin Isabella process Lahore Bogota Aria Jackson Sebastian 22:30 Delhi 94056 00:
-Row  60: 45 01:00 schedule 03:45 06:15 Samuel Emily 16:00 recently 35264 unless thousand remove Oslo Vienna J
-Row  61: ackson 00:15 employee 16:15 teacher Shanghai opportunity service recognize David Copenhagen 16:15 su
-Row  62: ggest 12378 Thomas therefore summer require sometimes strength Tehran reaction 84901 Emily 01:15 imp
-Row  63: ortant 23974 02:45 whenever Hazel Brussels 16:30 03:30 Tokyo Riyadh Budapest Michael relevant Olivia
-Row  64:  Addison together Cairo 21:45 07:15 marketing Baghdad Noah between LosAngeles Sofia someone reflect 
-Row  65: reference suddenly responsibility Caracas Caleb 04:15 71384 release essential 39425 summer Moscow Is
-Row  66: abella Mateo subject Stella Leo 14:15 generally Penelope 14:30 Lima Evelyn 04:00 things Ryan 48219 D
-Row  67: ublin register Guangzhou Owen Leah 18:15 NewOrleans MexicoCity return without thought 16:30 79815 re
-Row  68: place 19532 responsibility 11:15 things 23974 94056 12:30 48219 Caracas significant surface 04:00 tr
-Row  69: adition quality Claire Warsaw AbuDhabi Michael 83412 particular Frankfurt Aubrey society Seoul telev
-Row  70: ision Andrew 09:45 StPetersburg suggest 18:30 therefore 13:45 56723 reference Addison 14:00 05:15 20
-Row  71: :30 something 07:00 Houston Budapest 18:00 Hanoi decision Phoenix 06:45 Claire property sometimes or
-Row  72: ganization individual these temperature result yourself 12:30 Anna Hazel 56723 71384 Grayson whether
-Row  73:  68970 situation Anna Gabriel president Benjamin Istanbul 35264 Alexander Penelope Jack Moscow Rio N
-Row  74: athan 19:45 purpose Bangkok Sofia Zoe Chennai Claire something 15:00 Birmingham Auckland tradition 1
-Row  75: 0:15 previous travel Noah Charlotte 03:15 Alexander 81746 schedule reaction 16:45 04:00 reflect 3942
-Row  76: 5 03:00 supply propose 25763 12:45 individual product 81746 Milan Grace Jonathan Guangzhou Chloe Eli
-Row  77: zabeth strength 07:30 meanwhile 23:45 69418 religious Lincoln important therefore relation Mila 17:0
-Row  78: 0 theory Ellie 56083 Audrey register marketing 12:45 27543 39425 Angel progress remove 69418 electio
-Row  79: n theory responsible Samuel Amelia success Angel Layla 47068 Carter register 12:00 Ella Theodore 21:
-Row  80: 15 Olivia Emma Washington protect 70291 01:30 Brussels research 15:15 Houston 01:45 Toronto Lisbon C
-Row  81: harlotte Taipei Emma NewOrleans Benjamin Emily 69418 reality 19:30 property Victoria 02:00 Elijah fi
-Row  82: nancial Milan response 52097 CapeTown reference Ava 06:15 Daniel Shanghai 22:45 young 47329 Paris 16
-Row  83: :45 society population Jakarta Leah Madrid 11:30 principle security Kolkata Doha Penelope 75943 20:1
-Row  84: 5 thinking Nora 21:30 06:45 20:30 until therefore knowledge distance suddenly Warsaw tradition 97605
-Row  85:  strength 06:30 23974 15:45 23974 several 09:15 Manila 06:45 14:45 Levi LosAngeles question Houston 
-Row  86: Bangkok Miami Seoul including Frankfurt Athens propose 00:00 Nairobi 23:00 require LosAngeles Genesi
-Row  87: s 22:00 require 52841 52173 statement Dublin 15:45 13:45 review Guangzhou 12:45 strategy 20:00 20:30
-Row  88:  16:45 Jerusalem Kuwait 01:45 Auckland Paris Luke require Mila transfer Lisbon 11:30 Nathan 08:00 15
-Row  89: :15 possible 04:45 Lily require Prague Manila 08:00 48219 08:45 29184 Theodore something serious 603
-Row  90: 87 remember television AbuDhabi Athens Madison whenever 22:00 truly Thomas Lily Jonathan Aria 03:15 
-Row  91: 01:15 successful Levi however 17:15 pressure 00:15 thousand Daniel successful Andrew represent progr
-Row  92: ess practical BuenosAires Jonathan 05:15 purpose Kennedy Istanbul 14:00 70291 SaoPaulo register thes
-Row  93: e process Barcelona 56083 Victoria including 22:00 Brussels 96520 direction 60387 security StPetersb
-Row  94: urg 68970 19:00 Leah Berlin Sofia welcome Karachi Henry 81746 these Shanghai CapeTown 23:45 purpose 
-Row  95: Delhi wherever 29184 Claire decision 15:45 Mateo Caracas young 21:45 Carter result Singapore Camila 
-Row  96: 36821 Olivia several BuenosAires AbuDhabi strength resource Bogota 36821 yourselves Oliver Sebastian
-Row  97:  surprise Osaka 18:30 student 18:15 01:00 22:15 require 19:15 problem Copenhagen 03:00 unless Amster
-Row  98: dam distance Ethan Budapest suddenly language protect writing 90546 subject SaoPaulo 83659 knowledge
-Row  99:  48219 success 07:15 Munich Dallas Sophia Kyiv 19:45 16:00 Kuwait 13:15 between Daniel 16:45 86539 y
-
-Seed usada: 5e4d6caa3844c36eefc9fd18d2cf8473e11de3dc8388b28343a48fe477c11884
+Seed: b798c06b9498392753470297fa19d7df3dc4cda9b3e001f555fb18b6f2d259c3

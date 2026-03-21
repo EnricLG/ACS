@@ -19,3 +19,4 @@ config/
 # OS
 .DS_Store
 Thumbs.dboutput_*.txt
+output_*.txt

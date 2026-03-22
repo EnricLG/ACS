@@ -69,6 +69,7 @@ class Phase3Visual:
             raise NotImplementedError("Reverse mapping only implemented for mode='both'")
 
     def to_html(self, grid_visual):
+        """Generate an HTML table showing the visual representation."""
         html_lines = [
             '<!DOCTYPE html>',
             '<html>',
@@ -80,18 +81,20 @@ class Phase3Visual:
             '</style>',
             '</head>',
             '<body>',
-            '<h2>Visual Output</h2>',
+            '<h2>Phase 3 Visual Output (Colors Only)</h2>',
             '<p>Grid size: 100x100</p>',
             '<table border="1" cellspacing="0" cellpadding="5">'
         ]
+
         for row in grid_visual:
-            html_lines.append('    <tr>')
+            html_lines.append('     <tr>')
             for cell in row:
                 if cell.startswith('#'):
                     html_lines.append(f'    <td style="background-color:{cell};">&nbsp;<\/td>')
                 else:
                     html_lines.append(f'    <td style="font-size:20px; text-align:center;">{cell}<\/td>')
-            html_lines.append('    </tr>')
+            html_lines.append('     <\/tr>')
+
         html_lines.append('<\/table>')
         html_lines.append('</body>')
         html_lines.append('</html>')

@@ -1,8 +1,8 @@
-# Layered Cipher System (LCS) – A Multi‑Layer Encryption Exercise
+# Layered Cipher System (LCS)
 
-This project demonstrates a **4‑phase encryption pipeline** that transforms any plaintext into a 100×100 grid of symbols. Each phase is fully reversible when the secret keys are known, but without them the ciphertext becomes computationally infeasible to decode – even if the algorithm and the original plaintext are known.
+A multi‑layer encryption exercise that transforms any plaintext into a 100×100 grid of symbols. Each layer is fully reversible when the secret key is known, but without it the ciphertext is computationally unbreakable.
 
-## 🔐 The Four Phases
+## 🔐 The Phases
 
 ### Phase 0 – Preprocessing
 - Real words are padded to at least 6 characters.
@@ -12,7 +12,7 @@ This project demonstrates a **4‑phase encryption pipeline** that transforms an
 ### Phase 1 – Hierarchical Rotations
 - The grid is recursively divided into blocks of sizes 100, 50, 25, 20, 10, 5 and 4.
 - Each block is independently rotated 0, 90, 180 or 270 degrees, following a key‑derived pattern.
-- Total possible rotation configurations: **4^1171 ≈ 10⁷⁰⁵** – a number vastly larger than the number of atoms in the observable universe.
+- **Security contribution:** 4¹¹⁷¹ ≈ 10⁷⁰⁵ possible configurations.
 
 ### Phase 2 – Dictionary Cipher
 - 100 horizontal dictionaries (permutations of the 100‑character alphabet) and 100 vertical dictionaries (arranged as a Latin square) are derived from the key.
@@ -21,44 +21,48 @@ This project demonstrates a **4‑phase encryption pipeline** that transforms an
   2. A vertical dictionary index k = row‑specific permutation[i][p] is chosen.
   3. A dynamic shift s (based on the ciphertext of the previous row) is applied to the column index.
   4. The output character is taken from vertical[k] at position (j + s) mod 100.
-- Even with a known plaintext, the 100 horizontal, 100 vertical, and 100 row‑order permutations create an **effective key space of (100!)³⁰⁰ ≈ 10^47,400**.
+- **Security contribution:** (100!)³⁰⁰ ≈ 10⁴⁷ ⁴⁰⁰.
 
-### Phase 3 – Pairwise Transform & Colour Output
-- The 100×100 grid of characters is flattened and consecutive cells are combined into numbers **w = a·100 + b** (0–9999).
-- These numbers are then mapped to **CSS colours** (using a deterministic random palette) to produce a purely visual output.
+### Phase 3 – Concentric Square Rotations
+- **Stage 1 (Quadrants):** The grid is divided into 4 quadrants of 25×25. In each quadrant, concentric squares of odd sizes (3,5,7,…,25) are rotated around the quadrant’s center. For a square of side `s`, the border contains `4·(s-1)` cells, and a rotation can be any number of steps from 1 to `4·(s-1)` (direction also matters, giving `4·(s-1)` possibilities). The total number of possible rotations for this stage is the product over all odd sizes of `(4·(s-1))^4` (four quadrants).
+- **Stage 2 (Whole grid):** On the full 100×100 grid, concentric squares of even sizes (2,4,6,…,100) are rotated around the grid’s center. Each even‑sized square contributes `4·(s-1)` possibilities.
+- All rotation parameters are derived from the master key.
+- **Security contribution:** The total number of configurations for Phase 3 is:
+- This product is larger than 10³⁰⁰, adding a massive additional barrier.
 
-### Phase 4 – Final Substitution & Exotic Character Output
-- The same numbers (0–9999) are further transformed using a **keyed pseudo‑random permutation** (a 14‑bit Feistel network with cycle walking).
-- The result is mapped to a list of **10 000 exotic Unicode characters** (Greek, Cyrillic, Arabic, Thai, Chinese, Hiragana, etc.) – producing the final ciphertext.
+### Phase 4 – Pairwise Transform & Final Substitution
+- The character grid after Phase 3 is flattened and consecutive cells are combined into numbers **w = a·100 + b** (0‑9999). This step is deterministic (no key).
+- The numbers then undergo a **keyed pseudo‑random permutation** (14‑bit Feistel with cycle walking) to produce the final ciphertext numbers.
+- **Security contribution of the final substitution:** 10 000! ≈ 10³⁵ ⁶⁶⁰.
+
+### Visual Outputs
+- **Colors:** The numbers after the pairwise transform (before final substitution) are mapped to a fixed palette of 10 000 CSS colors, producing a purely visual grid. This is an intermediate visualisation (no security).
+- **Exotic characters:** The final ciphertext numbers are mapped to 10 000 Unicode characters from diverse scripts (Greek, Cyrillic, Arabic, Thai, Chinese, Hiragana, etc.) – the final obfuscated output.
 
 ## 📊 Decoding Difficulty (Even with Known Plaintext)
 
-All phases are **public algorithms**, but the secret keys (master key + IV) determine:
-- The filler word list order
-- All 100 horizontal and vertical permutations
-- All 100 row‑order permutations
-- All rotation angles for every block
-- The pseudo‑random permutations in Phase 4
+All phases are public algorithms, but the secret keys (master key + IV) determine all permutations and rotation patterns. Without the key, an attacker faces an astronomically large search space:
 
-Without the key, an attacker faces an astronomically large search space:
+| Component                                | Size / Security Contribution            |
+|------------------------------------------|-----------------------------------------|
+| Hierarchical rotations (Phase 1)         | 4¹¹⁷¹ ≈ 10⁷⁰⁵                           |
+| Dictionary cipher (Phase 2)              | (100!)³⁰⁰ ≈ 10⁴⁷ ⁴⁰⁰                    |
+| Concentric square rotations (Phase 3)    | > 10³⁰⁰                                 |
+| Final substitution (Phase 4)             | 10 000! ≈ 10³⁵ ⁶⁶⁰                      |
 
-| Component                          | Size                           |
-|------------------------------------|--------------------------------|
-| Rotations (Phase 1)                | 4^1171 ≈ 10⁷⁰⁵                |
-| Dictionary cipher (Phase 2)        | (100!)^300 ≈ 10^47,400        |
-| Final substitution (Phase 4)       | 10 000! ≈ 10^35,660           |
+Even if an attacker could try 10²⁰ combinations per second, the time required would be many orders of magnitude longer than the age of the universe.
 
-Even if the attacker could try 10²⁰ combinations per second, the time required would be many orders of magnitude longer than the age of the universe.
+## 🌐 Sample Outputs (Generated with 1984 text)
 
-## 🌐 Sample Outputs
-
-All sample outputs were generated with the **full 1984 text** and can be viewed online via GitHub Pages:
+All outputs are available online via GitHub Pages:
 
 - [Phase 0 – Preprocessed grid (text)](https://github.com/EnricLG/ACS/blob/master/docs/sample_output_phase0_1984.txt)
 - [Phase 1 – After hierarchical rotations (text)](https://github.com/EnricLG/ACS/blob/master/docs/sample_output_phase1_rotated_1984.txt)
 - [Phase 2 – After dictionary cipher (text)](https://github.com/EnricLG/ACS/blob/master/docs/sample_output_phase2_1984.txt)
-- [Phase 3 – Colour‑only output (HTML)](https://enriclg.github.io/ACS/sample_output_phase3_colors_1984.html)
-- [Phase 4 – Exotic‑character output (HTML)](https://enriclg.github.io/ACS/sample_output_phase4_exotic_1984.html)
+- [Phase 3 – After concentric rotations (text)](https://github.com/EnricLG/ACS/blob/master/docs/sample_output_phase3_concentric_1984.txt)
+- [Intermediate – Pairwise numbers (text)](https://github.com/EnricLG/ACS/blob/master/docs/sample_output_phase3b_numeric_1984.txt)
+- [Visual – Colors only (HTML)](https://enriclg.github.io/ACS/sample_output_phase3_colors_1984.html)
+- [Final – Exotic characters only (HTML)](https://enriclg.github.io/ACS/sample_output_phase4_exotic_1984.html)
 
 *Note: The HTML files are large (100×100 tables); they open correctly in any modern browser.*
 

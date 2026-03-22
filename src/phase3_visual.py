@@ -22,7 +22,7 @@ class Phase3Visual:
         self.rng = random.Random(seed)
         self.mode = mode
 
-        # Load characters (even if mode='colors' we still need them for reverse mapping, but we can skip loading)
+        # Load characters
         if char_file is None:
             char_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'exotic_chars.txt')
         self.chars = self._load_chars(char_file)
@@ -35,7 +35,7 @@ class Phase3Visual:
             b = self.rng.randint(0, 255)
             self.colors.append(f"#{r:02x}{g:02x}{b:02x}")
 
-        # Build reverse mappings (for decryption, only used if mode supports both)
+        # Build reverse mappings
         self._rev_chars = {ch: i*2 for i, ch in enumerate(self.chars)}
         self._rev_colors = {col: i*2+1 for i, col in enumerate(self.colors)}
 
@@ -59,9 +59,9 @@ class Phase3Visual:
         if not (0 <= w < 10000):
             raise ValueError(f"Value {w} out of range [0,9999]")
         if self.mode == 'colors':
-            return self.colors[w]            # use color for all numbers
+            return self.colors[w]
         elif self.mode == 'chars':
-            return self.chars[w]             # use character for all numbers
+            return self.chars[w]
         else:  # 'both'
             if w % 2 == 0:
                 return self.chars[w // 2]
@@ -78,8 +78,6 @@ class Phase3Visual:
             else:
                 raise ValueError(f"Visual '{visual}' not found")
         else:
-            # For mode='colors' or 'chars', we need to reconstruct the mapping
-            # For simplicity, we assume decryption will not use this method directly.
             raise NotImplementedError("Reverse mapping only implemented for mode='both'")
 
     def to_html(self, grid_visual):
@@ -101,15 +99,15 @@ class Phase3Visual:
         ]
 
         for row in grid_visual:
-            html_lines.append('    <tr>')
+            html_lines.append('     <tr>')
             for cell in row:
                 if cell.startswith('#'):
-                    html_lines.append(f'    <td style="background-color:{cell};">&nbsp;<\/td>')
+                    html_lines.append(f'    <td style="background-color:{cell};">&nbsp;</td>')
                 else:
-                    html_lines.append(f'    <td style="font-size:20px; text-align:center;">{cell}<\/td>')
-            html_lines.append('    </tr>')
+                    html_lines.append(f'    <td style="font-size:20px; text-align:center;">{cell}</td>')
+            html_lines.append('     </tr>')
 
-        html_lines.append('<\/table>')
+        html_lines.append('</table>')
         html_lines.append('</body>')
         html_lines.append('</html>')
 

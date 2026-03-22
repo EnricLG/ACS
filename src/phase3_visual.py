@@ -87,15 +87,15 @@ class Phase3Visual:
         ]
 
         for row in grid_visual:
-            html_lines.append('       <tr>')
+            html_lines.append('      <tr>')
             for cell in row:
                 if cell.startswith('#'):
-                    html_lines.append(f'    <td style="background-color:{cell};">&nbsp;</td>')
+                    html_lines.append(f'    <td style="background-color:{cell};">&nbsp;<\/td>')
                 else:
-                    html_lines.append(f'    <td style="font-size:20px; text-align:center;">{cell}</td>')
-            html_lines.append('      </tr>')
+                    html_lines.append(f'    <td style="font-size:20px; text-align:center;">{cell}<\/td>')
+            html_lines.append('      <\/tr>')
 
-        html_lines.append('</table>')
+        html_lines.append('<\/table>')
         html_lines.append('</body>')
         html_lines.append('</html>')
         return '\n'.join(html_lines)

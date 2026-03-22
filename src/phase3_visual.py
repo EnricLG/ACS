@@ -23,7 +23,7 @@ class Phase3Visual:
         # Load Chinese characters
         if chinese_file is None:
             # Try default location
-            chinese_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'chinese_chars.txt')
+            chinese_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'exotic_chars.txt')
         self.chinese = self._load_chinese_chars(chinese_file)
         
         # Generate 10,000 CSS colors

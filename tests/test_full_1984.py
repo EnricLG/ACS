@@ -3,10 +3,10 @@ Full encryption pipeline for 1984 text:
 - Phase 0: Preprocessing
 - Phase 1: Rotations
 - Phase 2: Dictionary cipher
-- Phase 3: Pairwise linear transform
+- Phase 3: Concentric square rotations (NEW)
+- Phase 3b: Pairwise linear transform (convert characters to numbers 0-9999)
 - Phase 4: Final substitution (Feistel network)
-- Outputs saved after each phase.
-- Visual outputs: Phase 3 = only colors; Phase 4 = only exotic characters.
+- Outputs saved after each phase for reference.
 """
 
 import sys
@@ -15,13 +15,13 @@ sys.path.append('src')
 from phase0_preprocessing import Phase0Preprocessing
 from phase1_rotations import Phase1Rotations
 from phase2_dict_cipher import Phase2DictCipher
+from phase3_concentric_rotations import Phase3ConcentricRotations
 from phase3_pairwise import Phase3Pairwise
 from phase3_visual import Phase3Visual
 from phase4_final_substitution import Phase4FinalSubstitution
 from alphabet import ALPHABET
 
 def clean_text(text: str) -> str:
-    """Replace non‑ASCII punctuation with ASCII equivalents."""
     text = text.replace('‘', "'").replace('’', "'")
     text = text.replace('—', '-')
     return text
@@ -72,78 +72,94 @@ start = time.time()
 grid2 = cipher2.encrypt(grid1)
 print(f"   Done in {time.time()-start:.2f}s.")
 with open("output_1984_phase2.txt", "w") as f:
-    f.write("Phase 2: Final ciphertext after dictionary cipher (100x100)\n")
+    f.write("Phase 2: After dictionary cipher (100x100 characters)\n")
     f.write("=" * 70 + "\n")
     for i in range(100):
         f.write(f"Row {i:3d}: {''.join(grid2[i])}\n")
     f.write(f"\nSeed: {seed0.hex()}\nMaster key: {master_key.hex()[:16]}...\nIV: {iv.hex()}\n")
 
-# Convert characters to indices for Phase 3 and 4
-grid2_ints = [[ALPHABET.index(ch) for ch in row] for row in grid2]
-
-# Phase 3: Pairwise transform
-print("\n🔷 Phase 3: Pairwise linear transform...")
-phase3 = Phase3Pairwise()
+# Phase 3: Concentric rotations (on characters)
+print("\n🔷 Phase 3: Concentric square rotations...")
+phase3 = Phase3ConcentricRotations(master_key, iv)
 start = time.time()
-grid3_numeric = phase3.transform(grid2_ints)
+grid3 = phase3.transform(grid2)
 print(f"   Done in {time.time()-start:.2f}s.")
-with open("output_1984_phase3_numeric.txt", "w") as f:
-    f.write("Phase 3: After pairwise transform (100x100 numbers 0-9999)\n")
+with open("output_1984_phase3.txt", "w") as f:
+    f.write("Phase 3: After concentric rotations (100x100 characters)\n")
     f.write("=" * 70 + "\n")
     for i in range(100):
-        f.write("Row {:3d}: ".format(i) + " ".join(f"{x:05d}" for x in grid3_numeric[i]) + "\n")
+        f.write(f"Row {i:3d}: {''.join(grid3[i])}\n")
+    f.write(f"\nSeed: {seed0.hex()}\nMaster key: {master_key.hex()[:16]}...\nIV: {iv.hex()}\n")
+
+# Convert characters to indices for pairwise transform
+grid3_ints = [[ALPHABET.index(ch) for ch in row] for row in grid3]
+
+# Phase 3b: Pairwise transform (convert to numbers 0-9999)
+print("\n🔷 Phase 3b: Pairwise linear transform...")
+pairwise = Phase3Pairwise()
+start = time.time()
+grid3b = pairwise.transform(grid3_ints)
+print(f"   Done in {time.time()-start:.2f}s.")
+with open("output_1984_phase3b_numeric.txt", "w") as f:
+    f.write("Phase 3b: After pairwise transform (100x100 numbers 0-9999)\n")
+    f.write("=" * 70 + "\n")
+    for i in range(100):
+        f.write("Row {:3d}: ".format(i) + " ".join(f"{x:05d}" for x in grid3b[i]) + "\n")
     f.write(f"\nSeed: {seed0.hex()}\nMaster key: {master_key.hex()[:16]}...\nIV: {iv.hex()}\n")
 
 # Phase 4: Final substitution
 print("\n🔷 Phase 4: Final substitution (Feistel)...")
 cipher4 = Phase4FinalSubstitution(master_key, iv)
 start = time.time()
-grid4_numeric = cipher4.encrypt(grid3_numeric)
+grid4 = cipher4.encrypt(grid3b)
 print(f"   Done in {time.time()-start:.2f}s.")
 with open("output_1984_phase4_numeric.txt", "w") as f:
     f.write("Phase 4: After final substitution (100x100 numbers 0-9999)\n")
     f.write("=" * 70 + "\n")
     for i in range(100):
-        f.write("Row {:3d}: ".format(i) + " ".join(f"{x:05d}" for x in grid4_numeric[i]) + "\n")
+        f.write("Row {:3d}: ".format(i) + " ".join(f"{x:05d}" for x in grid4[i]) + "\n")
     f.write(f"\nSeed: {seed0.hex()}\nMaster key: {master_key.hex()[:16]}...\nIV: {iv.hex()}\n")
 
-# Visual mapping for Phase 3 (pairwise output) – only colors
-print("\n🔷 Visual mapping (Phase 3) – colors only...")
-visual_phase3 = Phase3Visual(seed=b'1984', mode='colors')
+# Visual mapping for Phase 3b (numbers after pairwise) – colors only
+print("\n🔷 Visual mapping (Phase 3b) – colors only...")
+visual_colors = Phase3Visual(seed=b'1984', mode='colors')
 start = time.time()
-grid3_visual = []
-for row in grid3_numeric:
-    grid3_visual.append([visual_phase3.to_visual(w) for w in row])
+grid3b_visual = []
+for row in grid3b:
+    grid3b_visual.append([visual_colors.to_visual(w) for w in row])
 print(f"   Done in {time.time()-start:.2f}s.")
-with open("output_1984_phase3_visual.txt", "w", encoding="utf-8") as f:
-    f.write("Phase 3: Visual representation (colors only)\n")
+with open("output_1984_phase3b_colors.txt", "w") as f:
+    f.write("Phase 3b: Visual representation (colors only)\n")
     f.write("=" * 70 + "\n")
     for i in range(100):
-        f.write("Row {:3d}: ".format(i) + " ".join(grid3_visual[i]) + "\n")
-with open("output_1984_phase3_visual.html", "w", encoding="utf-8") as f:
-    f.write(visual_phase3.to_html(grid3_visual))
+        f.write("Row {:3d}: ".format(i) + " ".join(grid3b_visual[i]) + "\n")
+with open("docs/sample_output_phase3_colors_1984.html", "w", encoding="utf-8") as f:
+    f.write(visual_colors.to_html(grid3b_visual))
+print("   - docs/sample_output_phase3_colors_1984.html")
 
-# Visual mapping for Phase 4 (final output) – only exotic characters
+# Visual mapping for Phase 4 (final numbers) – exotic characters only
 print("\n🔷 Visual mapping (Phase 4) – exotic characters only...")
-visual_phase4 = Phase3Visual(seed=b'1984', mode='chars')
+visual_chars = Phase3Visual(seed=b'1984', mode='chars')
 start = time.time()
 grid4_visual = []
-for row in grid4_numeric:
-    grid4_visual.append([visual_phase4.to_visual(w) for w in row])
+for row in grid4:
+    grid4_visual.append([visual_chars.to_visual(w) for w in row])
 print(f"   Done in {time.time()-start:.2f}s.")
-with open("output_1984_phase4_visual.txt", "w", encoding="utf-8") as f:
+with open("output_1984_phase4_exotic.txt", "w") as f:
     f.write("Phase 4: Visual representation (exotic characters only)\n")
     f.write("=" * 70 + "\n")
     for i in range(100):
         f.write("Row {:3d}: ".format(i) + " ".join(grid4_visual[i]) + "\n")
-with open("output_1984_phase4_visual.html", "w", encoding="utf-8") as f:
-    f.write(visual_phase4.to_html(grid4_visual))
+with open("docs/sample_output_phase4_exotic_1984.html", "w", encoding="utf-8") as f:
+    f.write(visual_chars.to_html(grid4_visual))
+print("   - docs/sample_output_phase4_exotic_1984.html")
 
 print("\n✅ Output files created:")
 print("   - output_1984_phase0.txt")
 print("   - output_1984_phase1.txt")
 print("   - output_1984_phase2.txt")
-print("   - output_1984_phase3_numeric.txt")
+print("   - output_1984_phase3.txt")
+print("   - output_1984_phase3b_numeric.txt")
 print("   - output_1984_phase4_numeric.txt")
-print("   - output_1984_phase3_visual.txt / .html (colors only)")
-print("   - output_1984_phase4_visual.txt / .html (exotic chars only)")
+print("   - docs/sample_output_phase3_colors_1984.html")
+print("   - docs/sample_output_phase4_exotic_1984.html")

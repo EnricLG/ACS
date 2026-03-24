@@ -20,3 +20,11 @@ config/
 .DS_Store
 Thumbs.dboutput_*.txt
 output_*.txt
+build/
+dist/
+interactive_output/
+output_*.txt
+output_*.html
+*.gif
+__pycache__/
+*.pyc

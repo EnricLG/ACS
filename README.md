@@ -84,3 +84,5 @@ This project was built as a **learning exercise** to explore the design of layer
 **Repository:** [https://github.com/EnricLG/ACS](https://github.com/EnricLG/ACS)
 
 "I invite anyone to test, audit, or attempt to break the system – without the keys, the ciphertext is designed to be mathematically unbreakable."
+
+    Note: The system is designed for texts up to about 10,000 characters (the 100×100 grid). If your input exceeds this, it will be automatically truncated.

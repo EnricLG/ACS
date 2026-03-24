@@ -1,11 +1,11 @@
 """
 Phase 0: Preprocessing
 - Converts plain text into 100×100 grid
-- Pads real words to at least 6 characters using **random but deterministic** padding
-  based on the seed and the word's position.
-- Filler items: words, names, cities, times, numbers
-- Dynamically adds filler items to exactly fill 10000 characters (including spaces)
-- Final grid contains only words/items and spaces, no extra 'x'
+- Pads real words to at least 6 characters using deterministic letters (a-z)
+- Filler words are taken from a fixed list of 6-9 letter words
+- Dynamically computes number of filler words to exactly fill 10000 chars
+- Final grid contains only words of length 6-9 and spaces
+- Automatically truncates input to 10000 characters
 """
 
 import random
@@ -14,8 +14,10 @@ from typing import List, Tuple
 class Phase0Preprocessing:
     """
     Handles text preprocessing before encryption.
-    All filler items are strings (can be words, names, times, numbers).
+    All words in final grid have 6-9 characters.
     """
+
+    MAX_TEXT_LEN = 10000   # 100x100 grid
 
     def __init__(self, seed: bytes = None):
         if seed is None:
@@ -23,15 +25,12 @@ class Phase0Preprocessing:
         self.seed = seed
         self.rng = random.Random(seed)
 
-        # Load filler items (all are strings)
-        self.filler_items = self._load_filler_items()
+        # Load filler words (all 6-9 letters)
+        self.filler_words = self._load_filler_words()
 
-    def _load_filler_items(self) -> List[str]:
-        """Return a list of filler strings: words, names, cities, times, numbers."""
-        items = []
-
-        # Words (6-9 letters) – same as before
-        words_6_9 = [
+    def _load_filler_words(self) -> List[str]:
+        """Return a list of words with 6-9 letters."""
+        return [
             "between", "through", "however", "therefore", "meanwhile",
             "together", "although", "complete", "consider", "continue",
             "decision", "direction", "distance", "election", "employee",
@@ -66,85 +65,18 @@ class Phase0Preprocessing:
             "working", "would", "writing", "written", "young",
             "yourself", "yourselves"
         ]
-        items.extend(words_6_9)
 
-        # Names (50 male + 50 female) – same as before
-        names_male = [
-            "Liam", "Noah", "Oliver", "James", "Elijah", "William", "Henry", "Lucas", "Benjamin", "Theodore",
-            "Mateo", "Levi", "Sebastian", "Daniel", "Jack", "Michael", "Alexander", "Owen", "Samuel", "Ethan",
-            "David", "Joseph", "John", "Jackson", "Julian", "Christopher", "Luke", "Andrew", "Gabriel", "Joshua",
-            "Isaac", "Leo", "Grayson", "Ezra", "Carter", "Thomas", "Dylan", "Charles", "Caleb", "Nathan",
-            "Ryan", "Angel", "Lincoln", "Anthony", "Adam", "Christian", "Josiah", "Jonathan", "Landon", "Isaiah"
-        ]
-        names_female = [
-            "Olivia", "Emma", "Charlotte", "Amelia", "Sophia", "Isabella", "Ava", "Mia", "Evelyn", "Luna",
-            "Harper", "Camila", "Sofia", "Eleanor", "Elizabeth", "Emily", "Chloe", "Mila", "Violet", "Penelope",
-            "Abigail", "Ella", "Avery", "Hazel", "Nora", "Lily", "Grace", "Victoria", "Sofia", "Zoe",
-            "Stella", "Aria", "Layla", "Madison", "Ellie", "Natalie", "Leah", "Hannah", "Aubrey", "Brooklyn",
-            "Addison", "Audrey", "Bella", "Claire", "Skylar", "Anna", "Caroline", "Genesis", "Savannah", "Kennedy"
-        ]
-        items.extend(names_male)
-        items.extend(names_female)
-
-        # Cities (100 cities) – same as before
-        cities = [
-            "Amsterdam", "Athens", "Atlanta", "Auckland", "Baghdad", "Bangalore", "Bangkok", "Barcelona", "Berlin", "Bogota",
-            "Boston", "Brussels", "Bucharest", "Budapest", "BuenosAires", "Cairo", "Cancun", "CapeTown", "Caracas", "Casablanca",
-            "Chennai", "Chicago", "MexicoCity", "Copenhagen", "Dallas", "Delhi", "Dubai", "Dublin", "Istanbul", "Frankfurt",
-            "Guangzhou", "Guadalajara", "Hamburg", "Hanoi", "Houston", "Stockholm", "Jakarta", "Jerusalem", "Johannesburg", "Karachi",
-            "Kyiv", "KualaLumpur", "Kuwait", "Lagos", "Lahore", "Lima", "Lisbon", "London", "LosAngeles", "Madrid",
-            "Manila", "Melbourne", "Miami", "Milan", "Montreal", "Moscow", "Mumbai", "Munich", "Nairobi", "NewOrleans",
-            "NewYork", "Osaka", "Oslo", "Paris", "Beijing", "Philadelphia", "Phoenix", "Prague", "Port-au-Prince", "Rio",
-            "Rome", "SanFrancisco", "Santiago", "SaoPaulo", "Seattle", "Seoul", "Shanghai", "Singapore", "Sofia", "Sydney",
-            "Taipei", "Tehran", "TelAviv", "Tokyo", "Toronto", "Warsaw", "Vienna", "Washington", "Zurich", "AbuDhabi",
-            "AddisAbaba", "Birmingham", "Kolkata", "GuatemalaCity", "Dhaka", "Doha", "Medellin", "Riyadh", "StPetersburg", "Tijuana"
-        ]
-        items.extend(cities)
-
-        # Times (HH:MM)
-        times = []
-        for hour in range(24):
-            for minute in [0, 15, 30, 45]:
-                times.append(f"{hour:02d}:{minute:02d}")
-        items.extend(times)
-
-        # Numbers (5 digits)
-        numbers_5digit = [
-            "48219", "73506", "29184", "56723", "84901", "12378", "90546", "37815", "64290", "21657",
-            "75943", "83412", "47068", "19532", "60387", "52841", "97605", "34129", "81074", "25763",
-            "69418", "43985", "17206", "86539", "52097", "71384", "36821", "94056", "27543", "68970",
-            "43158", "80427", "15792", "62340", "79815", "35264", "91680", "47329", "68501", "23974",
-            "56083", "81746", "39425", "70291", "14837", "96520", "52173", "83659", "47916", "20865"
-        ]
-        items.extend(numbers_5digit)
-
-        return items
-
-    def _pad_real_word(self, word: str, index: int) -> str:
+    def _pad_real_word(self, word: str) -> str:
         """
-        Pad a real word to at least 6 characters using a deterministic pseudo‑random
-        suffix based on the word and its position index, using the object's seed.
-        The same word at different positions will get different suffixes.
+        Pad a real word to at least 6 characters using deterministic letters.
         """
         if len(word) >= 6:
             return word
-
-        # Use a separate RNG based on seed + index + word to generate suffix
-        # This ensures the same word in the same position gives the same suffix,
-        # but different positions give different suffixes.
-        # We'll use the built-in random seeded with a hash.
-        local_rng = random.Random()
-        # Combine seed (bytes) with index and word to create a unique state
-        import hashlib
-        state_bytes = self.seed + str(index).encode() + word.encode()
-        seed_int = int.from_bytes(hashlib.sha256(state_bytes).digest(), 'big')
-        local_rng.seed(seed_int)
-
         alphabet = "abcdefghijklmnopqrstuvwxyz"
         padded = word
         while len(padded) < 6:
-            # Choose a random letter from alphabet
-            next_char = local_rng.choice(alphabet)
+            total = sum((ord(c) for c in padded.lower()))
+            next_char = alphabet[total % 26]
             padded += next_char
         return padded
 
@@ -152,34 +84,45 @@ class Phase0Preprocessing:
         """
         Process plain text and return 100x100 grid of characters.
         No trailing 'x' – exactly 10000 characters from words and spaces.
+        If input is longer than 10000 characters, it is truncated.
         """
-        # 1. Split real words and pad them with index
+        # Truncate if necessary
+        if len(plain_text) > self.MAX_TEXT_LEN:
+            print(f"⚠️  Input text truncated from {len(plain_text)} to {self.MAX_TEXT_LEN} characters.")
+            plain_text = plain_text[:self.MAX_TEXT_LEN]
+
+        # 1. Pad real words
         real_words = plain_text.split()
-        padded_real = [self._pad_real_word(w, i) for i, w in enumerate(real_words)]
+        padded_real = [self._pad_real_word(w) for w in real_words]
 
         # 2. Start with real words
-        all_items = padded_real[:]  # list of strings (real words)
-        total_len = sum(len(item) for item in all_items) + (len(all_items) - 1)
+        all_words = padded_real[:]
+        # Current total characters = sum(len(word)) + (number_of_spaces)
+        total_len = sum(len(w) for w in all_words) + (len(all_words) - 1)
 
-        # 3. Add filler items until we reach or exceed 10000
+        # 3. Add filler words until we reach or exceed 10000
         while total_len < 10000:
-            filler = self.rng.choice(self.filler_items)
-            new_len = total_len + len(filler) + 1  # +1 for the space before it
+            filler = self.rng.choice(self.filler_words)
+            # New length if we add this word (including a space before it)
+            new_len = total_len + len(filler) + 1  # +1 for the space
             if new_len <= 10000:
-                all_items.append(filler)
+                all_words.append(filler)
                 total_len = new_len
             else:
-                # Adding whole item would exceed; break the last item to fit exactly
-                remaining = 10000 - total_len - 1
+                # Adding the whole word would exceed. To avoid 'x' at the end, we
+                # break the last word to fit exactly.
+                remaining = 10000 - total_len - 1  # -1 for the space before the new word
                 if remaining > 0:
+                    # Take a prefix of the filler word to fill exactly
                     part = filler[:remaining]
-                    all_items.append(part)
+                    all_words.append(part)
                     total_len += len(part) + 1
                 break
 
         # Join with spaces and ensure exactly 10000 characters
-        continuous = " ".join(all_items)
+        continuous = " ".join(all_words)
         if len(continuous) < 10000:
+            # This should not happen, but pad with spaces as safety
             continuous += " " * (10000 - len(continuous))
 
         # Create 100x100 grid

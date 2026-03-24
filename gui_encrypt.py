@@ -5,11 +5,11 @@ import os
 import random
 import webbrowser
 from pathlib import Path
+import tempfile
 
 # Asegurar que se puedan importar los módulos del proyecto
 sys.path.append(os.path.dirname(__file__))
 
-# Importa tus fases
 from phase0_preprocessing import Phase0Preprocessing
 from phase1_rotations import Phase1Rotations
 from phase2_dict_cipher import Phase2DictCipher
@@ -19,6 +19,8 @@ from phase4_final_substitution import Phase4FinalSubstitution
 from phase3_visual import Phase3Visual
 from alphabet import ALPHABET
 
+MAX_TEXT_LEN = 10000   # Límite para la cuadrícula 100x100
+
 class EncryptionApp:
     def __init__(self, root):
         self.root = root
@@ -26,7 +28,7 @@ class EncryptionApp:
         self.root.geometry("800x600")
 
         # Texto de entrada
-        tk.Label(root, text="Enter text to encrypt:").pack(pady=5)
+        tk.Label(root, text="Enter text to encrypt (max 10000 chars):").pack(pady=5)
         self.text_input = scrolledtext.ScrolledText(root, height=10)
         self.text_input.pack(fill="both", expand=True, padx=10, pady=5)
 
@@ -47,11 +49,21 @@ class EncryptionApp:
         self.text_output = scrolledtext.ScrolledText(root, height=15)
         self.text_output.pack(fill="both", expand=True, padx=10, pady=5)
 
+    def truncate_text(self, text):
+        if len(text) > MAX_TEXT_LEN:
+            messagebox.showwarning("Text truncated",
+                                   f"The text is too long ({len(text)} chars).\nIt will be truncated to {MAX_TEXT_LEN} characters.")
+            return text[:MAX_TEXT_LEN]
+        return text
+
     def encrypt(self):
         plaintext = self.text_input.get("1.0", tk.END).strip()
         if not plaintext:
             messagebox.showwarning("Empty text", "Please enter some text.")
             return
+
+        # Truncar si es necesario
+        plaintext = self.truncate_text(plaintext)
 
         phase = self.phase_var.get()
         master_key = random.randbytes(32)
@@ -120,7 +132,6 @@ class EncryptionApp:
 
     def show_html(self, html):
         """Guarda el HTML en un archivo temporal y lo abre en el navegador."""
-        import tempfile
         fd, path = tempfile.mkstemp(suffix=".html")
         with os.fdopen(fd, 'w', encoding='utf-8') as f:
             f.write(html)

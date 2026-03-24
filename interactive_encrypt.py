@@ -32,6 +32,15 @@ from alphabet import ALPHABET
 
 # ----------------------------------------------------------------------
 
+MAX_TEXT_LEN = 10000   # Límite para la cuadrícula 100x100
+
+def truncate_text(text, max_len=MAX_TEXT_LEN):
+    """Trunca el texto si es demasiado largo y muestra un aviso."""
+    if len(text) > max_len:
+        print(f"⚠️  Texto demasiado largo ({len(text)} caracteres). Se truncará a {max_len} caracteres.")
+        return text[:max_len]
+    return text
+
 def get_text_input():
     """Get plaintext from user (multiline)."""
     print("\n" + "="*60)
@@ -90,17 +99,20 @@ def main():
         print("No text entered. Exiting.")
         return
 
+    # 2. Truncate if necessary
+    text = truncate_text(text)
+
     print(f"\n📝 Text length: {len(text)} characters, ~{len(text.split())} words.")
 
-    # 2. Random key (always)
+    # 3. Random key (always)
     master_key = random.randbytes(32)
     iv = random.randbytes(16)
     print("🔑 Using random key (unique per run).")
 
-    # 3. User chooses phase
+    # 4. User chooses phase
     phase_choice = get_phase_choice()
 
-    # 4. Create output folder with timestamp
+    # 5. Create output folder with timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     out_dir = Path("interactive_output") / timestamp
     out_dir.mkdir(parents=True, exist_ok=True)
